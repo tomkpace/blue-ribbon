@@ -21,6 +21,8 @@ def process_ner_output(ner_output):
                 ent += f"{t.replace('#', '')} "
             else:
                 ent += f"{t} "
+        if ent[len(ent) - 1] == " ":
+            ent = ent[: len(ent) - 1]
         return ent
 
     i0 = 0
