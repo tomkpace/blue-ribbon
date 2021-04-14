@@ -1,5 +1,7 @@
+import spacy
 from transformers import pipeline
 
+nlp = spacy.load("en_core_web_sm")
 ner = pipeline("ner")
 
 
@@ -23,6 +25,8 @@ def process_ner_output(ner_output):
                 ent += f"{t} "
         if ent[len(ent) - 1] == " ":
             ent = ent[: len(ent) - 1]
+        if ent[0] == " ":
+            ent = ent[1:]
         return ent
 
     i0 = 0
