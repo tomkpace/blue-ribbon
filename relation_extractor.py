@@ -69,10 +69,23 @@ def removal_word_detector(text, removal_values=removal_values):
     return True
 
 
+def value_smoother(text):
+    text = text.replace(" -", "-")
+    text = text.replace("- ", "-")
+    text = text.replace("' s", "'s")
+    text = text.replace(" 's", "'s")
+    if text.count('"') == 1:
+        text = text.replace('"', "")
+    while text[0] == " ":
+        text = text[1:]
+    return text
+
+
 class RelationExtractor:
     def __init__(self, entity_id, text):
         self.entity_id = entity_id
         self.text = text
+        self.doc = nlp(text)
         self.relations = self.extract()
 
     def extract(self):
@@ -82,8 +95,8 @@ class RelationExtractor:
         """
         relations = []
         relations += self.extract_ner_relations(self.entity_id, self.text)
-        relations += self.extract_noun_relations(self.entity_id, self.text)
-        relations += self.extract_ad_relations(self.entity_id, self.text)
+        relations += self.extract_noun_relations(self.entity_id, self.doc)
+        relations += self.extract_ad_relations(self.entity_id, self.doc)
         return self.relation_filter(relations)
 
     @staticmethod
@@ -97,8 +110,7 @@ class RelationExtractor:
         return relations
 
     @staticmethod
-    def extract_noun_relations(entity_id, text):
-        doc = nlp(text)
+    def extract_noun_relations(entity_id, doc):
         relations = []
         for n in doc.noun_chunks:
             noun_chunk = []
@@ -113,21 +125,12 @@ class RelationExtractor:
         return relations
 
     @staticmethod
-    def extract_ad_relations(entity_id, text):
-        doc = nlp(text)
+    def extract_ad_relations(entity_id, doc):
         relations = []
         for t in doc:
             if not negation_detector(t):
                 if t.pos_ in ("ADJ"):
                     relations.append((entity_id, "is", t.text.lower()))
-                """
-                if t.pos_ in ("ADV"):
-                    verb = verb_extractor(t)
-                    if verb is not None:
-                        relations.append(
-                            (entity_id, verb.lower(), t.text.lower())
-                        )
-                """
         return relations
 
     @staticmethod
@@ -141,5 +144,10 @@ class RelationExtractor:
             elif removal_word_detector(relation[2]):
                 continue
             else:
+                relation = (
+                    relation[0],
+                    relation[1],
+                    value_smoother(relation[2]),
+                )
                 filtered_relations.append(relation)
         return filtered_relations

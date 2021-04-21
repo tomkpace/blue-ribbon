@@ -51,6 +51,6 @@ def process_ner_output(ner_output):
     for i, raw_ent in enumerate(entity_list):
         ent = _combine_tokens(raw_ent)
         raw_ent_type = next(iter(entity_type_list[i]))
-        result = (ent, raw_ent_type.replace("I-", ""))
+        result = (ent, raw_ent_type.replace("I-", "").replace("B-", ""))
         results.append(result)
     return results
