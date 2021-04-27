@@ -13,6 +13,9 @@ class KnowledgeGraphGenerator:
         self.relations = self.generate_relations()
         self.idx2rel = self.generate_idx2rel()
         self.rel2idx = self.generate_rel2idx()
+        self.values = self.generate_values()
+        self.idx2val = self.generate_idx2val()
+        self.val2idx = self.generate_val2idx()
 
     def generate_graph(self):
         """
@@ -47,12 +50,10 @@ class KnowledgeGraphGenerator:
 
     def generate_entities(self):
         """
-        Function that will return the union of the set of entities (entity_id)
-        and values from the knowledge graph DataFrame.
+        Function that will return the array of entities (entity_id)
+        from the knowledge graph DataFrame.
         """
-        entities = set(self.knowledge_graph_df["entity_id"].unique())
-        values = set(self.knowledge_graph_df["value"].unique())
-        entities = entities.union(values)
+        entities = self.knowledge_graph_df["entity_id"].unique()
         return entities
 
     def generate_idx2ent(self):
@@ -75,10 +76,10 @@ class KnowledgeGraphGenerator:
 
     def generate_relations(self):
         """
-        Function that will return a set of the relations in the
+        Function that will return a array of the relations in the
         knowledge graph DataFrame.
         """
-        relations = set(self.knowledge_graph_df["relation"].unique())
+        relations = self.knowledge_graph_df["relation"].unique()
         return relations
 
     def generate_idx2rel(self):
@@ -98,3 +99,29 @@ class KnowledgeGraphGenerator:
         """
         rel2idx = {v: k for k, v in self.idx2rel.items()}
         return rel2idx
+
+    def generate_values(self):
+        """
+        Function that will return the array of values from the
+        knowledge graph DataFrame.
+        """
+        entities = self.knowledge_graph_df["value"].unique()
+        return entities
+
+    def generate_idx2val(self):
+        """
+        Function that generates a dictionary that maps between the
+        value index and the value.
+        """
+        idx2val = pd.DataFrame(self.values, columns=["value"]).to_dict()[
+            "value"
+        ]
+        return idx2val
+
+    def generate_val2idx(self):
+        """
+        Function that generates a dictionary that maps between the
+        value and the falue index.
+        """
+        val2idx = {v: k for k, v in self.idx2val.items()}
+        return val2idx

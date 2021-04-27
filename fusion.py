@@ -1,9 +1,13 @@
 import numpy as np
+import pandas as pd
+from scipy.stats import norm
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 from tqdm.notebook import tqdm
+
+from knowledge_graph_generator import KnowledgeGraphGenerator
 
 
 class TransE(nn.Module):
@@ -16,9 +20,10 @@ class TransE(nn.Module):
         kg_obj,
         margin=1,
         embed_dim=100,
+        n_random_sample=1000,
         lr=0.01,
         weight_decay=1e-4,
-        n_epochs=1,
+        n_epochs=10,
     ):
         super(TransE, self).__init__()
 
@@ -26,21 +31,24 @@ class TransE(nn.Module):
         self.embed_dim = embed_dim  # embedding dimension
         self.num_ent = len(kg_obj.entities)  # number of entities
         self.num_rel = len(kg_obj.relations)  # number of relations
+        self.num_val = len(kg_obj.values)  # number of values
         self.margin = margin  # margin
         self.margin = nn.Parameter(torch.Tensor([margin]))
         self.margin.requires_grad = False
+        self.n_random_sample = n_random_sample
         self.lr = lr
         self.weight_decay = weight_decay
         self.n_epochs = n_epochs
 
         # Initialize model weights
         self.ent_embeds = nn.Embedding(self.num_ent, self.embed_dim)
-        self.rel_embeds = nn.Embedding(self.num_rel, self.embed_dim)
-
-        # Initialize weights using xavier
-        # TODO: Use method from paper like I did above
         nn.init.xavier_uniform_(self.ent_embeds.weight.data)
+
+        self.rel_embeds = nn.Embedding(self.num_rel, self.embed_dim)
         nn.init.xavier_uniform_(self.rel_embeds.weight.data)
+
+        self.val_embeds = nn.Embedding(self.num_val, self.embed_dim)
+        nn.init.xavier_uniform_(self.val_embeds.weight.data)
 
     def forward(self, data):
         """
@@ -77,16 +85,16 @@ class TransE(nn.Module):
         triple['h'] = [1.01, 4.67, 0.12, 0.5] for k = 4
         """
         triple = {}
+
         h = self.ent_embeds(data[-1, 0])
-        t = self.ent_embeds(data[-1, 2])
-        r = self.ent_embeds(data[-1, 1])
+        r = self.rel_embeds(data[-1, 1])
+        t = self.val_embeds(data[-1, 2])
+
         # Normalizing constraint (not sure if this is best way to apply this -
         # check out "max norm" prop in embeddings)
         triple["h"] = F.normalize(h, dim=-1)
         triple["t"] = F.normalize(t, dim=-1)
-        triple[
-            "r"
-        ] = r  # according to paper - they don't normalize the relations
+        triple["r"] = r  # according to paper, r is unnormalized.
         return triple
 
     def get_corrupted_triple(self, triple):
@@ -97,13 +105,21 @@ class TransE(nn.Module):
         # Need to randomly create the corrupted triplet by
         # replacing either head or tail with random entity
         corrupted_ent = np.random.choice(["h", "t"], 1, p=[0.5, 0.5]).item()
-        random_ent_idx = torch.LongTensor(
-            np.random.randint(low=0, high=self.num_ent, size=1)
-        )
         corrupted_triple = triple.copy()
-        corrupted_triple[corrupted_ent] = F.normalize(
-            self.ent_embeds(random_ent_idx), dim=-1
-        )
+        if corrupted_ent == "h":
+            random_ent_idx = torch.LongTensor(
+                np.random.randint(low=0, high=self.num_ent, size=1)
+            )
+            corrupted_triple[corrupted_ent] = F.normalize(
+                self.ent_embeds(random_ent_idx), dim=-1
+            )
+        elif corrupted_ent == "t":
+            random_ent_idx = torch.LongTensor(
+                np.random.randint(low=0, high=self.num_val, size=1)
+            )
+            corrupted_triple[corrupted_ent] = F.normalize(
+                self.val_embeds(random_ent_idx), dim=-1
+            )
         # print(corrupted_ent)
         # print(triple)
         # print(corrupted_triple)
@@ -125,10 +141,10 @@ class TransE(nn.Module):
             t_embed = h_embed + r_embed
             # return nearest neighbor
             # print(t_embed)
-            dist = torch.zeros((self.num_ent, 1))
-            for i in range(self.num_ent):
+            dist = torch.zeros((self.num_val, 1))
+            for i in range(self.num_val):
                 dist[i, :] = torch.norm(
-                    self.ent_embeds(torch.LongTensor([i])) - t_embed,
+                    self.val_embeds(torch.LongTensor([i])) - t_embed,
                     dim=1,
                     p=None,
                 )
@@ -136,7 +152,7 @@ class TransE(nn.Module):
             knn = dist.topk(k, dim=0, largest=False)
             top_tails = []
             for i in knn.indices:
-                top_tails.append(self.kg_obj.idx2ent[i.item()])
+                top_tails.append(self.kg_obj.idx2val[i.item()])
             print("kNN dist: {}, words: {}".format(knn.values, top_tails))
 
     @staticmethod
@@ -146,26 +162,43 @@ class TransE(nn.Module):
             score, zero_tensor
         ).mean()  # average losses over batch
 
-    def fit(self):
-
+    def gen_training_array(self, training_df):
         # Create array of indices for the knowledge graph DataFrame.
-        idx_df = self.kg_obj.knowledge_graph_df.copy(deep=True)
+        idx_df = training_df.copy(deep=True)
         idx_df["entity_id"] = idx_df["entity_id"].apply(
             lambda x: self.kg_obj.ent2idx[x]
         )
         idx_df["value"] = idx_df["value"].apply(
-            lambda x: self.kg_obj.ent2idx[x]
+            lambda x: self.kg_obj.val2idx[x]
         )
         idx_df["relation"] = idx_df["relation"].apply(
             lambda x: self.kg_obj.rel2idx[x]
         )
         idx_array = idx_df.values
+        return idx_array
 
+    def gen_random_dist(self, input_array, return_dist=False):
+        """"""
+        random_dist = []
+        for _ in range(self.n_random_sample):
+            idx = np.random.randint(0, len(input_array))
+            triple = self.idx2embeds(
+                torch.LongTensor(input_array[idx]).unsqueeze(0)
+            )
+            corrupted_triple = self.get_corrupted_triple(triple)
+            distance_tensor = self.get_distance(corrupted_triple)
+            distance = distance_tensor.detach().numpy()[0]
+            random_dist.append(distance)
+        self.random_mu, self.random_sigma = norm.fit(random_dist)
+        if return_dist:
+            return random_dist
+
+    def fit(self, training_array, perform_random_dist=True):
         # set optimizer
         optimizer = optim.SGD(self.parameters(), lr=0.01, weight_decay=1e-4)
 
         for _ in range(self.n_epochs):
-            for triple in tqdm(idx_array):
+            for triple in tqdm(training_array):
                 # Step 1. Remember that Pytorch accumulates gradients.
                 # We need to clear them out before each instance
                 self.zero_grad()
@@ -183,3 +216,76 @@ class TransE(nn.Module):
                 # and update the parameters by calling optimizer.step()
                 loss.backward()
                 optimizer.step()
+        if perform_random_dist:
+            self.gen_random_dist(training_array)
+
+    def get_global_distance(self, input_array):
+        """"""
+        dist = []
+        for idx in range(len(input_array)):
+            triple = self.idx2embeds(
+                torch.LongTensor(input_array[idx]).unsqueeze(0)
+            )
+            distance_tensor = self.get_distance(triple)
+            distance = distance_tensor.detach().numpy().item()
+            dist.append(distance)
+        return dist
+
+    def gen_probability(self, distance_array):
+        """"""
+        probability = 1 - norm.cdf(
+            distance_array, loc=self.random_mu, scale=self.random_sigma
+        )
+        return probability
+
+    def array2kg_df(self, idx_array):
+        """"""
+        kg_df = pd.DataFrame(
+            idx_array, columns=["entity_id", "relation", "value"]
+        )
+        kg_df["entity_id"] = kg_df["entity_id"].apply(
+            lambda x: self.kg_obj.idx2ent[x]
+        )
+        kg_df["value"] = kg_df["value"].apply(lambda x: self.kg_obj.idx2val[x])
+        kg_df["relation"] = kg_df["relation"].apply(
+            lambda x: self.kg_obj.idx2rel[x]
+        )
+        return kg_df
+
+    def gen_full_array(self):
+        """
+        Generate a full array of all possible combinations of
+        the indices for entity_id, relation and value.
+        """
+        full_array = np.array(
+            np.meshgrid(
+                list(range(self.num_ent)),
+                list(range(self.num_rel)),
+                list(range(self.num_val)),
+            )
+        ).T.reshape(-1, 3)
+        return full_array
+
+
+class TransEFuser:
+    """"""
+
+    def __init__(self, **kwargs):
+        self.kwargs = kwargs
+
+    def fuse(self, input_kg_df):
+        for i, relation in enumerate(input_kg_df["relation"].unique()):
+            df = input_kg_df.loc[input_kg_df["relation"] == relation]
+            kg = KnowledgeGraphGenerator(known_data_list=[df])
+            trans = TransE(kg_obj=kg, **self.kwargs)
+            training_array = trans.gen_training_array(df)
+            trans.fit(training_array)
+            full_array = trans.gen_full_array()
+            new_df = trans.array2kg_df(full_array)
+            new_df["distancce"] = trans.get_global_distance(full_array)
+            new_df["probability"] = trans.gen_probability(new_df["distancce"])
+            if i == 0:
+                kg_df = new_df
+            else:
+                kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
+        return kg_df
