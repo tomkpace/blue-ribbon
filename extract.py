@@ -1,5 +1,5 @@
 import os
-import io
+from io import StringIO
 import boto3
 import pandas as pd
 from knowledge_graph_generator import KnowledgeGraphGenerator
@@ -11,8 +11,9 @@ KEY = ""
 
 def main():
     s3 = boto3.client("s3")
-    obj = s3.get_object(Bucket=BUCKET_NAME, Key=KEY)
-    df = pd.read_csv(io.BytesIO(obj["Body"].read()), encoding="utf8")
+    s3_resource = boto3.resource("s3")
+    s3.download_file(BUCKET_NAME, KEY, "df.csv")
+    df = pd.read_csv("df.csv")
     for i, entity in enumerate(df["entity_id"].unique()):
         review_df = df.loc[df["entity_id"] == entity]
         generator = KnowledgeGraphGenerator(
@@ -22,11 +23,11 @@ def main():
             drop=True
         )
         str_entity = entity.replace("/", "-")
-        kg_df.to_csv(f"{str_entity}.csv", index=False)
-        s3.upload_file(
-            f"{str_entity}.csv", OUTPUT_BUCKET_NAME, f"{str_entity}.csv"
-        )
-        os.remove(f"{str_entity}.csv")
+        csv_buffer = StringIO()
+        kg_df.to_csv(csv_buffer, index=False)
+        s3_resource.Object(
+            BUCKET_NAME, f"{OUTPUT_PREFIX}{str_entity}.csv"
+        ).put(Body=csv_buffer.getvalue())
 
 
 if __name__ == "__main__":

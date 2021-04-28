@@ -1,11 +1,12 @@
 import numpy as np
 import pandas as pd
 from scipy.stats import norm
+import scipy.stats
+from sklearn.model_selection import KFold, StratifiedShuffleSplit
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-from tqdm.notebook import tqdm
 
 from knowledge_graph_generator import KnowledgeGraphGenerator
 
@@ -198,7 +199,7 @@ class TransE(nn.Module):
         optimizer = optim.SGD(self.parameters(), lr=0.01, weight_decay=1e-4)
 
         for _ in range(self.n_epochs):
-            for triple in tqdm(training_array):
+            for triple in training_array:
                 # Step 1. Remember that Pytorch accumulates gradients.
                 # We need to clear them out before each instance
                 self.zero_grad()
@@ -218,6 +219,33 @@ class TransE(nn.Module):
                 optimizer.step()
         if perform_random_dist:
             self.gen_random_dist(training_array)
+
+    def evaluate(self, test_array, method="rank"):
+        if method == "loss":
+            loss = []
+            for triple in test_array:
+                self.zero_grad()
+                input_triple = torch.LongTensor(triple).unsqueeze(0)
+                scores = self.forward(input_triple)
+                loss.append(self.loss_fn(scores).detach().numpy().item())
+            return np.mean(loss)
+        elif method == "rank":
+            rank = []
+            for test_triple in test_array:
+                triple = test_triple.copy()
+                entity_idx = triple[0]
+                loss = []
+                for test_entity_idx in range(self.num_ent):
+                    self.zero_grad()
+                    triple[0] = test_entity_idx
+                    input_triple = torch.LongTensor(triple).unsqueeze(0)
+                    scores = self.forward(input_triple)
+                    loss.append(self.loss_fn(scores).detach().numpy().item())
+                ranks = scipy.stats.rankdata(loss)
+                rank.append(ranks[entity_idx])
+            return np.mean(rank)
+        else:
+            raise NotImplementedError
 
     def get_global_distance(self, input_array):
         """"""
@@ -252,16 +280,16 @@ class TransE(nn.Module):
         )
         return kg_df
 
-    def gen_full_array(self):
+    def gen_full_array(self, idx_array):
         """
         Generate a full array of all possible combinations of
         the indices for entity_id, relation and value.
         """
         full_array = np.array(
             np.meshgrid(
-                list(range(self.num_ent)),
-                list(range(self.num_rel)),
-                list(range(self.num_val)),
+                np.unique(idx_array[:, 0]),
+                np.unique(idx_array[:, 1]),
+                np.unique(idx_array[:, 2]),
             )
         ).T.reshape(-1, 3)
         return full_array
@@ -270,22 +298,65 @@ class TransE(nn.Module):
 class TransEFuser:
     """"""
 
-    def __init__(self, **kwargs):
+    def __init__(self, n_splits=20, max_epochs=20, patience=5, **kwargs):
+        self.n_splits = n_splits
+        self.max_epochs = max_epochs
+        self.patience = patience
         self.kwargs = kwargs
 
     def fuse(self, input_kg_df):
-        for i, relation in enumerate(input_kg_df["relation"].unique()):
-            df = input_kg_df.loc[input_kg_df["relation"] == relation]
+        kg_df = pd.DataFrame(
+            columns=[
+                "entity_id",
+                "relation",
+                "value",
+                "distance",
+                "probability",
+            ]
+        )
+        for relation in input_kg_df["relation"].unique():
+            df = input_kg_df.loc[
+                input_kg_df["relation"] == relation
+            ].reset_index(drop=True)
             kg = KnowledgeGraphGenerator(known_data_list=[df])
-            trans = TransE(kg_obj=kg, **self.kwargs)
+            trans = TransE(kg_obj=kg, n_epochs=1, **self.kwargs)
             training_array = trans.gen_training_array(df)
-            trans.fit(training_array)
-            full_array = trans.gen_full_array()
-            new_df = trans.array2kg_df(full_array)
-            new_df["distancce"] = trans.get_global_distance(full_array)
-            new_df["probability"] = trans.gen_probability(new_df["distancce"])
-            if i == 0:
-                kg_df = new_df
-            else:
+            entities = training_array[:, 0]
+            strat = StratifiedShuffleSplit(n_splits=self.n_splits)
+            kfold = KFold(self.n_splits)
+            try:
+                for i, j in strat.split(training_array, entities):
+                    pass
+                splitter = strat.split(training_array, entities)
+            except Exception:
+                print("Resorted to Kfold splitter.")
+                splitter = kfold.split(training_array)
+            j = 0
+            for train_idx, test_idx in splitter:
+                loss = np.inf
+                stagnant_iterations = 0
+
+                for _ in range(self.max_epochs):
+                    if stagnant_iterations >= self.patience:
+                        continue
+                    trans.fit(training_array[train_idx])
+                    new_loss = trans.evaluate(training_array[test_idx])
+                    if new_loss >= loss:
+                        stagnant_iterations += 1
+                    else:
+                        stagnant_iterations = 0
+                    loss = new_loss
+                    print(
+                        f"relation {relation}, cv {j}, epoch {_}, loss {new_loss}"
+                    )
+
+                full_array = trans.gen_full_array(training_array[test_idx])
+                new_df = trans.array2kg_df(full_array)
+                new_df["distance"] = trans.get_global_distance(full_array)
+                new_df["probability"] = trans.gen_probability(
+                    new_df["distance"]
+                )
                 kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
+                j += 1
+
         return kg_df
