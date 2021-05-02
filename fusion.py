@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-
+from tqdm.notebook import tqdm
 from knowledge_graph_generator import KnowledgeGraphGenerator
 
 
@@ -199,7 +199,7 @@ class TransE(nn.Module):
         optimizer = optim.SGD(self.parameters(), lr=0.01, weight_decay=1e-4)
 
         for _ in range(self.n_epochs):
-            for triple in training_array:
+            for triple in tqdm(training_array):
                 # Step 1. Remember that Pytorch accumulates gradients.
                 # We need to clear them out before each instance
                 self.zero_grad()
