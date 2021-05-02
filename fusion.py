@@ -36,6 +36,8 @@ class TransE(nn.Module):
         self.margin = margin  # margin
         self.margin = nn.Parameter(torch.Tensor([margin]))
         self.margin.requires_grad = False
+        # n_random_sample is the number of samples to generate the
+        # random distance distribution.
         self.n_random_sample = n_random_sample
         self.lr = lr
         self.weight_decay = weight_decay
@@ -179,7 +181,14 @@ class TransE(nn.Module):
         return idx_array
 
     def gen_random_dist(self, input_array, return_dist=False):
-        """"""
+        """
+        Method that will generate a random distance distribution
+        by randomly sampling corrupted triples with n_random_sample
+        samples.  The random distribution is fit to a normal
+        distribution and then populates self.random_mu and self.random_sigma
+        in order to compare the distance of a triple in the knowledge
+        graph to the distribution of randomly generated triples.
+        """
         random_dist = []
         for _ in range(self.n_random_sample):
             idx = np.random.randint(0, len(input_array))
@@ -221,6 +230,13 @@ class TransE(nn.Module):
             self.gen_random_dist(training_array)
 
     def evaluate(self, test_array, method="rank"):
+        """
+        Method to characterize the 'accuracy' of self.parameters()
+        at fitting the data in test_array using one of two methods:
+        loss or rank.  The loss method will return the average loss and
+        the rank method will return the average rank of the true
+        entity in the triple.
+        """
         if method == "loss":
             loss = []
             for triple in test_array:
@@ -248,7 +264,10 @@ class TransE(nn.Module):
             raise NotImplementedError
 
     def get_global_distance(self, input_array):
-        """"""
+        """
+        Method that will generate a list of distances corresponding to
+        each triple in input_array.
+        """
         dist = []
         for idx in range(len(input_array)):
             triple = self.idx2embeds(
@@ -260,14 +279,22 @@ class TransE(nn.Module):
         return dist
 
     def gen_probability(self, distance_array):
-        """"""
+        """
+        Method that will generate an array of probabilities based on
+        an input list of distances.  The probability that is generated
+        is the cumulative probability of obtaining at a distance at
+        most that large with a randomly generated triple.
+        """
         probability = 1 - norm.cdf(
             distance_array, loc=self.random_mu, scale=self.random_sigma
         )
         return probability
 
     def array2kg_df(self, idx_array):
-        """"""
+        """
+        Method that will convert an array of indices (idx_array) into
+        a DataFrame of entities, relations and values.
+        """
         kg_df = pd.DataFrame(
             idx_array, columns=["entity_id", "relation", "value"]
         )
@@ -296,7 +323,11 @@ class TransE(nn.Module):
 
 
 class TransEFuser:
-    """"""
+    """
+    Wrapper class that uses TransE to fuse a input knowledge
+    graph DataFrame and generate a probabilistic knowledge
+    graph DataFrame.
+    """
 
     def __init__(self, n_splits=20, max_epochs=20, patience=5, **kwargs):
         self.n_splits = n_splits
@@ -305,6 +336,13 @@ class TransEFuser:
         self.kwargs = kwargs
 
     def fuse(self, input_kg_df):
+        """
+        Method that fits and predicts the distances and probabilities for
+        the triples in input_kg_df using a k = n_splits cross-validation
+        approach.  The method will train the parameters in TransE for
+        max_epochs or until no improvement has been oberved in the
+        performance of TransE.evaluate() for 'patience' epochs.
+        """
         kg_df = pd.DataFrame(
             columns=[
                 "entity_id",
