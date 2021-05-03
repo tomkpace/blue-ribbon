@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import norm
 import scipy.stats
-from sklearn.model_selection import KFold, StratifiedShuffleSplit
+from sklearn.model_selection import KFold
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -10,14 +10,9 @@ from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 import torch.optim as optim
 
-# from tqdm.notebook import tqdm
 from knowledge_graph_generator import KnowledgeGraphGenerator
 
 
-# This is the line in the code
-# training_array = trans.gen_training_array(df)
-
-# The pytorch dataset classs
 class MovieKG(Dataset):
     """Movie knowledge graph data."""
 
@@ -332,15 +327,33 @@ class TransE(nn.Module):
             dist.append(distance)
         return dist
 
-    def gen_probability(self, distance_array):
+    @staticmethod
+    def gen_probability(input_kg_df):
         """
-        Method that will generate an array of probabilities based on
-        an input list of distances.  The probability that is generated
-        is the cumulative probability of obtaining at a distance at
-        most that large with a randomly generated triple.
+        Method that will generate an array of approximate probabilities
+        based on an input kg_df DataFame of triples with distance.
+        The probability that is generated is based on the min-max scaled
+        value of the distance for each unique combination of relation
+        and value.
         """
-        probability = 1 - norm.cdf(
-            distance_array, loc=self.random_mu, scale=self.random_sigma
+        kg_df = input_kg_df.copy(deep=True)
+        group_df = kg_df[["relation", "value", "distance"]].groupby(
+            ["relation", "value"]
+        )
+        kg_df = kg_df.merge(
+            group_df.min()
+            .reset_index()
+            .rename(columns={"distance": "min_distance"}),
+            on=["relation", "value"],
+        )
+        kg_df = kg_df.merge(
+            group_df.max()
+            .reset_index()
+            .rename(columns={"distance": "max_distance"}),
+            on=["relation", "value"],
+        )
+        probability = 1 - (kg_df["distance"] - kg_df["min_distance"]) / (
+            kg_df["max_distance"] - kg_df["min_distance"]
         )
         return probability
 
@@ -457,10 +470,6 @@ class TransEFuser:
                 # Instantiate the test DataLoader
                 test_loader = self.gen_data_loader(df.iloc[test_idx])
 
-                # Gen random dist distribution for probability calculations.
-                training_array = trans.gen_training_array(df.iloc[train_idx])
-                trans.gen_random_dist(training_array)
-
                 for _ in range(self.max_epochs):
                     if stagnant_iterations >= self.patience:
                         continue
@@ -477,9 +486,6 @@ class TransEFuser:
                 full_array = trans.gen_full_array(idx_array)
                 new_df = trans.array2kg_df(full_array)
                 new_df["distance"] = trans.get_global_distance(full_array)
-                new_df["probability"] = trans.gen_probability(
-                    new_df["distance"]
-                )
                 kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
-
+            kg_df["probability"] = trans.gen_probability(kg_df)
         return kg_df
