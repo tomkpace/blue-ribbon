@@ -6,9 +6,59 @@ from sklearn.model_selection import KFold, StratifiedShuffleSplit
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.utils.data import Dataset
+from torch.utils.data import DataLoader
 import torch.optim as optim
 from tqdm.notebook import tqdm
 from knowledge_graph_generator import KnowledgeGraphGenerator
+
+
+# This is the line in the code
+# training_array = trans.gen_training_array(df)
+
+# The pytorch dataset classs
+class MovieKG(Dataset):
+    """Movie knowledge graph data."""
+
+    def __init__(self, movie_data, kg_obj, transform=None):
+        """
+        Args:
+            movie_data (pandas df): relational triples from movie database.
+            knowledge_graph_obj (object): KG object created from
+            'KnowledgeGraphExtractor'.
+            transform (callable, optional): Optional transform to be applied
+            on a sample.
+        """
+        self.kg_obj = kg_obj
+        self.transform = transform
+        idx_df = movie_data.copy(deep=True)
+        # Create array of indices for the knowledge graph DataFrame.
+        idx_df["entity_id"] = idx_df["entity_id"].apply(
+            lambda x: self.kg_obj.ent2idx[x]
+        )
+        idx_df["value"] = idx_df["value"].apply(
+            lambda x: self.kg_obj.val2idx[x]
+        )
+        idx_df["relation"] = idx_df["relation"].apply(
+            lambda x: self.kg_obj.rel2idx[x]
+        )
+        idx_array = idx_df.values
+        # save idx_array as data
+        self.data = idx_array
+
+    def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, idx):
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+
+        # returns the triple as indices, cuts off year and arc count
+        X = self.data[idx][:3]
+
+        if self.transform:
+            X = self.transform(X)
+        return X
 
 
 class TransE(nn.Module):
@@ -89,9 +139,9 @@ class TransE(nn.Module):
         """
         triple = {}
 
-        h = self.ent_embeds(data[-1, 0])
-        r = self.rel_embeds(data[-1, 1])
-        t = self.val_embeds(data[-1, 2])
+        h = self.ent_embeds(data[:, 0])
+        r = self.rel_embeds(data[:, 1])
+        t = self.val_embeds(data[:, 2])
 
         # Normalizing constraint (not sure if this is best way to apply this -
         # check out "max norm" prop in embeddings)
@@ -167,7 +217,7 @@ class TransE(nn.Module):
 
     def gen_training_array(self, training_df):
         # Create array of indices for the knowledge graph DataFrame.
-        idx_df = training_df.copy(deep=True)
+        idx_df = training_df.copy()
         idx_df["entity_id"] = idx_df["entity_id"].apply(
             lambda x: self.kg_obj.ent2idx[x]
         )
@@ -203,33 +253,31 @@ class TransE(nn.Module):
         if return_dist:
             return random_dist
 
-    def fit(self, training_array, perform_random_dist=True):
+    def fit(self, training_loader):
         # set optimizer
         optimizer = optim.SGD(self.parameters(), lr=0.01, weight_decay=1e-4)
+        self.train()
+        with torch.enable_grad():
+            for _ in range(self.n_epochs):
+                for batch in tqdm(training_loader):
+                    # Step 1. Remember that Pytorch accumulates gradients.
+                    # We need to clear them out before each instance
+                    self.zero_grad()
 
-        for _ in range(self.n_epochs):
-            for triple in tqdm(training_array):
-                # Step 1. Remember that Pytorch accumulates gradients.
-                # We need to clear them out before each instance
-                self.zero_grad()
+                    # Step 2. Get our inputs ready for the network, that is,
+                    # turn them into Tensors of word indices.
+                    input_triple = torch.LongTensor(batch)
 
-                # Step 2. Get our inputs ready for the network, that is,
-                # turn them into Tensors of word indices.
-                input_triple = torch.LongTensor(triple).unsqueeze(0)
-                # adding unsqueeze if batch size = 1
+                    # Step 3. Run our forward pass.
+                    scores = self.forward(input_triple)
+                    loss = self.loss_fn(scores)
 
-                # Step 3. Run our forward pass.
-                scores = self.forward(input_triple)
-                loss = self.loss_fn(scores)
+                    # Step 4. Compute the loss, gradients,
+                    # and update the parameters by calling optimizer.step()
+                    loss.backward()
+                    optimizer.step()
 
-                # Step 4. Compute the loss, gradients,
-                # and update the parameters by calling optimizer.step()
-                loss.backward()
-                optimizer.step()
-        if perform_random_dist:
-            self.gen_random_dist(training_array)
-
-    def evaluate(self, test_array, method="rank"):
+    def evaluate(self, test_loader, method="loss"):
         """
         Method to characterize the 'accuracy' of self.parameters()
         at fitting the data in test_array using one of two methods:
@@ -239,12 +287,14 @@ class TransE(nn.Module):
         """
         if method == "loss":
             loss = []
-            for triple in test_array:
-                self.zero_grad()
-                input_triple = torch.LongTensor(triple).unsqueeze(0)
-                scores = self.forward(input_triple)
-                loss.append(self.loss_fn(scores).detach().numpy().item())
-            return np.mean(loss)
+            self.eval()  # Put model in eval mode.
+            with torch.no_grad():
+                for batch in tqdm(test_loader):
+                    self.zero_grad()
+                    input_triple = torch.LongTensor(batch)
+                    scores = self.forward(input_triple)
+                    loss.append(self.loss_fn(scores).detach().numpy().item())
+                return np.mean(loss)
         elif method == "rank":
             rank = []
             for test_triple in test_array:
@@ -329,13 +379,31 @@ class TransEFuser:
     graph DataFrame.
     """
 
-    def __init__(self, n_splits=20, max_epochs=20, patience=5, **kwargs):
+    def __init__(
+        self, kg_obj, n_splits=5, max_epochs=10, patience=5, **kwargs
+    ):
+        self.kg_obj = kg_obj
         self.n_splits = n_splits
         self.max_epochs = max_epochs
         self.patience = patience
         self.kwargs = kwargs
 
-    def fuse(self, input_kg_df):
+    def gen_data_loader(
+        self, input_data, batch_size=128, shuffle=True, drop_last=True
+    ):
+        """
+        Method to generate a PyTorch DataLoader based on an input MovieKG
+        PyTorch Dataset object that is instantiated from input_data.
+        """
+        loader = DataLoader(
+            MovieKG(input_data, self.kg_obj),
+            batch_size=batch_size,
+            shuffle=shuffle,
+            drop_last=drop_last,
+        )
+        return loader
+
+    def fuse(self):
         """
         Method that fits and predicts the distances and probabilities for
         the triples in input_kg_df using a k = n_splits cross-validation
@@ -352,16 +420,19 @@ class TransEFuser:
                 "probability",
             ]
         )
+        trans = TransE(kg_obj=self.kg_obj, **self.kwargs)
+        input_kg_df = self.kg_obj.knowledge_graph_df
         for relation in input_kg_df["relation"].unique():
             df = input_kg_df.loc[
                 input_kg_df["relation"] == relation
             ].reset_index(drop=True)
-            kg = KnowledgeGraphGenerator(known_data_list=[df])
-            trans = TransE(kg_obj=kg, n_epochs=1, **self.kwargs)
-            training_array = trans.gen_training_array(df)
-            entities = training_array[:, 0]
-            strat = StratifiedShuffleSplit(n_splits=self.n_splits)
+            # kg = KnowledgeGraphGenerator(known_data_list=[df])
+            # trans = TransE(kg_obj=self.kg_obj, **self.kwargs)
+            # training_array = trans.gen_training_array(df)
+            # entities = training_array[:, 0]
+            # strat = StratifiedShuffleSplit(n_splits=self.n_splits)
             kfold = KFold(self.n_splits)
+            """
             try:
                 for i, j in strat.split(training_array, entities):
                     pass
@@ -370,31 +441,40 @@ class TransEFuser:
                 print("Resorted to Kfold splitter.")
                 splitter = kfold.split(training_array)
             j = 0
-            for train_idx, test_idx in splitter:
+            """
+            for train_idx, test_idx in kfold.split(df):
                 loss = np.inf
                 stagnant_iterations = 0
+
+                # Instantiate the training DataLoader
+                training_loader = self.gen_data_loader(df.iloc[train_idx])
+
+                # Instantiate the test DataLoader
+                test_loader = self.gen_data_loader(df.iloc[test_idx])
+
+                # Gen random dist distribution for probability calculations.
+                training_array = trans.gen_training_array(df.iloc[train_idx])
+                trans.gen_random_dist(training_array)
 
                 for _ in range(self.max_epochs):
                     if stagnant_iterations >= self.patience:
                         continue
-                    trans.fit(training_array[train_idx])
-                    new_loss = trans.evaluate(training_array[test_idx])
+                    trans.fit(training_loader)
+                    new_loss = trans.evaluate(test_loader)
                     if new_loss >= loss:
                         stagnant_iterations += 1
                     else:
                         stagnant_iterations = 0
                     loss = new_loss
-                    print(
-                        f"relation {relation}, cv {j}, epoch {_}, loss {new_loss}"
-                    )
+                    print(f"relation {relation}, epoch {_}, loss {new_loss}")
 
-                full_array = trans.gen_full_array(training_array[test_idx])
+                idx_array = trans.gen_training_array(df.iloc[test_idx])
+                full_array = trans.gen_full_array(idx_array)
                 new_df = trans.array2kg_df(full_array)
                 new_df["distance"] = trans.get_global_distance(full_array)
                 new_df["probability"] = trans.gen_probability(
                     new_df["distance"]
                 )
                 kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
-                j += 1
 
         return kg_df
