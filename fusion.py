@@ -409,9 +409,13 @@ class TransEFuser:
         Method to generate a PyTorch DataLoader based on an input MovieKG
         PyTorch Dataset object that is instantiated from input_data.
         """
+        if len(input_data) < self.batch_size:
+            batch_size = int(2 ** np.floor(np.log2(len(input_data))))
+        else:
+            batch_size = self.batch_size
         loader = DataLoader(
             MovieKG(input_data, self.kg_obj),
-            batch_size=self.batch_size,
+            batch_size=batch_size,
             shuffle=shuffle,
             drop_last=drop_last,
         )
