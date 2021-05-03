@@ -9,7 +9,8 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 import torch.optim as optim
-from tqdm.notebook import tqdm
+
+# from tqdm.notebook import tqdm
 from knowledge_graph_generator import KnowledgeGraphGenerator
 
 
@@ -259,7 +260,7 @@ class TransE(nn.Module):
         self.train()
         with torch.enable_grad():
             for _ in range(self.n_epochs):
-                for batch in tqdm(training_loader):
+                for batch in training_loader:
                     # Step 1. Remember that Pytorch accumulates gradients.
                     # We need to clear them out before each instance
                     self.zero_grad()
@@ -289,13 +290,16 @@ class TransE(nn.Module):
             loss = []
             self.eval()  # Put model in eval mode.
             with torch.no_grad():
-                for batch in tqdm(test_loader):
+                for batch in test_loader:
                     self.zero_grad()
                     input_triple = torch.LongTensor(batch)
                     scores = self.forward(input_triple)
                     loss.append(self.loss_fn(scores).detach().numpy().item())
                 return np.mean(loss)
         elif method == "rank":
+            """
+            Deprecated.
+            """
             rank = []
             for test_triple in test_array:
                 triple = test_triple.copy()
@@ -380,16 +384,26 @@ class TransEFuser:
     """
 
     def __init__(
-        self, kg_obj, n_splits=5, max_epochs=10, patience=5, **kwargs
+        self,
+        kg_obj,
+        batch_size=1024,
+        n_splits=5,
+        max_epochs=10,
+        patience=5,
+        **kwargs,
     ):
         self.kg_obj = kg_obj
+        self.batch_size = batch_size
         self.n_splits = n_splits
         self.max_epochs = max_epochs
         self.patience = patience
         self.kwargs = kwargs
 
     def gen_data_loader(
-        self, input_data, batch_size=128, shuffle=True, drop_last=True
+        self,
+        input_data,
+        shuffle=True,
+        drop_last=True,
     ):
         """
         Method to generate a PyTorch DataLoader based on an input MovieKG
@@ -397,7 +411,7 @@ class TransEFuser:
         """
         loader = DataLoader(
             MovieKG(input_data, self.kg_obj),
-            batch_size=batch_size,
+            batch_size=self.batch_size,
             shuffle=shuffle,
             drop_last=drop_last,
         )
@@ -426,22 +440,9 @@ class TransEFuser:
             df = input_kg_df.loc[
                 input_kg_df["relation"] == relation
             ].reset_index(drop=True)
-            # kg = KnowledgeGraphGenerator(known_data_list=[df])
-            # trans = TransE(kg_obj=self.kg_obj, **self.kwargs)
-            # training_array = trans.gen_training_array(df)
-            # entities = training_array[:, 0]
-            # strat = StratifiedShuffleSplit(n_splits=self.n_splits)
+
             kfold = KFold(self.n_splits)
-            """
-            try:
-                for i, j in strat.split(training_array, entities):
-                    pass
-                splitter = strat.split(training_array, entities)
-            except Exception:
-                print("Resorted to Kfold splitter.")
-                splitter = kfold.split(training_array)
-            j = 0
-            """
+
             for train_idx, test_idx in kfold.split(df):
                 loss = np.inf
                 stagnant_iterations = 0

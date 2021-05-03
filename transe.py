@@ -2,29 +2,32 @@ from io import StringIO
 import boto3
 import numpy as np
 import pandas as pd
+from knowledge_graph_generator import KnowledgeGraphGenerator
 from fusion import TransEFuser
 
 BUCKET_NAME = ""
-KEY = ""
+INPUT_KEY = ""
+OUTPUT_KEY = ""
+COUNT_LIMIT = 250
 
 
 def main():
     s3 = boto3.client("s3")
     s3_resource = boto3.resource("s3")
-    s3.download_file(BUCKET_NAME, f"{KEY}00000-combined.csv", "df.csv")
+    s3.download_file(BUCKET_NAME, f"{INPUT_KEY}kg_count_year_df.csv", "df.csv")
     full_df = pd.read_csv("df.csv")
-    entities = full_df["entity_id"].unique()
-    np.random.shuffle(entities)
-    for i in range(0, len(entities), 25):
-        entity_group = entities[i : i + 25]
-        df = full_df.loc[full_df["entity_id"].isin(entity_group)]
-        fuser = TransEFuser(embed_dim=50, n_splits=5)
-        kg_df = fuser.fuse(df)
-        csv_buffer = StringIO()
-        kg_df.to_csv(csv_buffer, index=False)
-        s3_resource.Object(BUCKET_NAME, f"{KEY}kg/{i}.csv").put(
-            Body=csv_buffer.getvalue()
-        )
+    df = full_df.loc[full_df["arc_count"] >= COUNT_LIMIT].reset_index(
+        drop=True
+    )
+    df = df[["entity_id", "relation", "value"]]
+    kg_obj = KnowledgeGraphGenerator(known_data_list=[df])
+    fuser = TransEFuser(kg_obj)
+    kg_df = fuser.fuse()
+    csv_buffer = StringIO()
+    kg_df.to_csv(csv_buffer, index=False)
+    s3_resource.Object(
+        BUCKET_NAME, f"{OUTPUT_KEY}kg/count_limit_{COUNT_LIMIT}.csv"
+    ).put(Body=csv_buffer.getvalue())
 
 
 if __name__ == "__main__":
