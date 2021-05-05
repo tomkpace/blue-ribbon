@@ -104,7 +104,6 @@ class TransE(nn.Module):
         input: training triplet
         output: score to be inserted to the loss
         """
-        # print(data)
         # Get embeddings from input tuple
         triple = self.idx2embeds(data)
         # Get corrupted triple
@@ -169,9 +168,6 @@ class TransE(nn.Module):
             corrupted_triple[corrupted_ent] = F.normalize(
                 self.val_embeds(random_ent_idx), dim=-1
             )
-        # print(corrupted_ent)
-        # print(triple)
-        # print(corrupted_triple)
         return corrupted_triple
 
     def get_tail(self, head, relation, k):
@@ -189,7 +185,6 @@ class TransE(nn.Module):
             # Add embeddings
             t_embed = h_embed + r_embed
             # return nearest neighbor
-            # print(t_embed)
             dist = torch.zeros((self.num_val, 1))
             for i in range(self.num_val):
                 dist[i, :] = torch.norm(
@@ -411,6 +406,7 @@ class TransEFuser:
         self.max_epochs = max_epochs
         self.patience = patience
         self.kwargs = kwargs
+        self.verbose = False
 
     def gen_data_loader(
         self,
@@ -479,16 +475,17 @@ class TransEFuser:
                     if stagnant_iterations >= self.patience:
                         continue
                     trans.fit(training_loader)
-                    train_loss = trans.evaluate(training_loader)
                     new_loss = trans.evaluate(test_loader)
                     if new_loss >= loss:
                         stagnant_iterations += 1
                     else:
                         stagnant_iterations = 0
                     loss = new_loss
-                    print(f"relation {relation}, epoch {_}, loss {new_loss}")
+                    if self.verbose:
+                        print(
+                            f"relation {relation}, epoch {_}, loss {new_loss}"
+                        )
                     if history is not None:
-                        history[j]["training_loss"].append(train_loss)
                         history[j]["test_loss"].append(loss)
                 j += 1
                 idx_array = trans.gen_training_array(df.iloc[test_idx])
@@ -497,4 +494,4 @@ class TransEFuser:
                 new_df["distance"] = trans.get_global_distance(idx_array)
                 kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
             kg_df["probability"] = trans.gen_probability(kg_df)
-        return kg_df
+        return kg_df[["entity_id", "relation", "value", "distance"]]
