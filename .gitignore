@@ -132,3 +132,8 @@ dmypy.json
 *.gz 
 *.zip
 *.csv
+
+# Exclude desired .csv files
+#!data/review_plot_df.csv
+#!data/known_df.csv
+#!data/raw_kg_df.csv

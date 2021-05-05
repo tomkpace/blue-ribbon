@@ -1,3 +1,4 @@
+# Script for performing the extraction method on SageMaker.
 import os
 from io import StringIO
 import boto3

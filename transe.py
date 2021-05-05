@@ -1,3 +1,4 @@
+# Script for performing the fusion method on SageMaker.
 from io import StringIO
 import boto3
 import numpy as np
