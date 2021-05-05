@@ -1,0 +1,2417 @@
+entity_id,relation,value
+m/demolition_man,is,good
+m/dumb_and_dumber,is,good
+m/hot_tub_time_machine,is,good
+m/spaceballs,is,good
+m/terminator,is,good
+m/demolition_man,is,best
+m/dumb_and_dumber,is,best
+m/hot_tub_time_machine,is,best
+m/spaceballs,is,best
+m/terminator,is,best
+m/dumb_and_dumber,is,little
+m/hot_tub_time_machine,is,little
+m/terminator,is,little
+m/demolition_man,is,new
+m/hot_tub_time_machine,is,new
+m/demolition_man,is,old
+m/dumb_and_dumber,is,old
+m/hot_tub_time_machine,is,old
+m/spaceballs,is,old
+m/demolition_man,is,great
+m/hot_tub_time_machine,is,great
+m/spaceballs,is,great
+m/demolition_man,is,real
+m/hot_tub_time_machine,is,real
+m/spaceballs,is,real
+m/terminator,is,real
+m/demolition_man,is,better
+m/hot_tub_time_machine,is,better
+m/demolition_man,is,bad
+m/hot_tub_time_machine,is,bad
+m/spaceballs,is,bad
+m/terminator,is,bad
+m/demolition_man,is,young
+m/dumb_and_dumber,is,young
+m/hot_tub_time_machine,is,young
+m/demolition_man,is,big
+m/hot_tub_time_machine,is,big
+m/spaceballs,is,big
+m/terminator,is,big
+m/demolition_man,is,high
+m/dumb_and_dumber,is,high
+m/hot_tub_time_machine,is,high
+m/terminator,is,high
+m/hot_tub_time_machine,is,entertaining
+m/terminator,is,entertaining
+m/demolition_man,is,funny
+m/dumb_and_dumber,is,funny
+m/hot_tub_time_machine,is,funny
+m/spaceballs,is,funny
+m/hot_tub_time_machine,features the theme,the story
+m/terminator,features the theme,the story
+m/demolition_man,is,long
+m/dumb_and_dumber,is,long
+m/hot_tub_time_machine,is,long
+m/dumb_and_dumber,is,hard
+m/hot_tub_time_machine,is,hard
+m/terminator,is,hard
+m/dumb_and_dumber,is,worth
+m/hot_tub_time_machine,is,worth
+m/dumb_and_dumber,is,true
+m/demolition_man,features the location,Hollywood
+m/hot_tub_time_machine,features the location,Hollywood
+m/demolition_man,is,small
+m/terminator,is,small
+m/hot_tub_time_machine,is,interesting
+m/hot_tub_time_machine,is,original
+m/terminator,is,original
+m/demolition_man,is,dead
+m/dumb_and_dumber,is,dead
+m/hot_tub_time_machine,is,dead
+m/dumb_and_dumber,is,american
+m/hot_tub_time_machine,is,american
+m/terminator,is,american
+m/hot_tub_time_machine,is,final
+m/spaceballs,is,final
+m/terminator,is,final
+m/terminator,is,strong
+m/terminator,is,second
+m/hot_tub_time_machine,features the theme,time
+m/spaceballs,features the theme,time
+m/demolition_man,is,human
+m/terminator,is,human
+m/hot_tub_time_machine,features the theme,life
+m/demolition_man,is,enjoyable
+m/hot_tub_time_machine,is,enjoyable
+m/dumb_and_dumber,features the miscellaneous theme,American
+m/hot_tub_time_machine,features the miscellaneous theme,American
+m/terminator,features the miscellaneous theme,American
+m/dumb_and_dumber,is,fine
+m/hot_tub_time_machine,is,cinematic
+m/spaceballs,is,cinematic
+m/terminator,is,cinematic
+m/demolition_man,features the theme,the end
+m/hot_tub_time_machine,features the theme,the end
+m/hot_tub_time_machine,is,perfect
+m/dumb_and_dumber,is,short
+m/hot_tub_time_machine,is,short
+m/terminator,is,emotional
+m/hot_tub_time_machine,features the theme,the audience
+m/spaceballs,features the theme,the audience
+m/demolition_man,is,solid
+m/terminator,is,solid
+m/hot_tub_time_machine,is,able
+m/spaceballs,is,able
+m/demolition_man,is,special
+m/hot_tub_time_machine,is,special
+m/terminator,is,special
+m/dumb_and_dumber,is,low
+m/hot_tub_time_machine,is,low
+m/spaceballs,is,low
+m/terminator,is,low
+m/dumb_and_dumber,is,comic
+m/hot_tub_time_machine,is,comic
+m/spaceballs,is,comic
+m/terminator,is,comic
+m/hot_tub_time_machine,features the theme,things
+m/terminator,features the theme,things
+m/hot_tub_time_machine,is,silly
+m/spaceballs,is,silly
+m/terminator,is,silly
+m/hot_tub_time_machine,is,different
+m/demolition_man,features the theme,people
+m/hot_tub_time_machine,features the theme,people
+m/hot_tub_time_machine,is,familiar
+m/dumb_and_dumber,features the theme,love
+m/hot_tub_time_machine,features the theme,love
+m/terminator,features the theme,love
+m/dumb_and_dumber,is,wrong
+m/demolition_man,is,fun
+m/hot_tub_time_machine,is,fun
+m/dumb_and_dumber,is,entire
+m/hot_tub_time_machine,is,easy
+m/dumb_and_dumber,is,modern
+m/terminator,is,compelling
+m/demolition_man,features the theme,the characters
+m/dumb_and_dumber,features the theme,the characters
+m/hot_tub_time_machine,features the theme,the characters
+m/hot_tub_time_machine,is,worst
+m/hot_tub_time_machine,is,smart
+m/terminator,is,free
+m/terminator,is,dark
+m/demolition_man,features the miscellaneous theme,Spanish
+m/spaceballs,features the miscellaneous theme,Spanish
+m/terminator,features the theme,times
+m/spaceballs,is,close
+m/hot_tub_time_machine,is,terrific
+m/terminator,is,terrific
+m/hot_tub_time_machine,is,large
+m/spaceballs,is,large
+m/hot_tub_time_machine,is,black
+m/terminator,is,black
+m/hot_tub_time_machine,is,sure
+m/hot_tub_time_machine,features the theme,fun
+m/terminator,is,recent
+m/demolition_man,is,clever
+m/hot_tub_time_machine,is,clever
+m/spaceballs,is,clever
+m/terminator,is,clever
+m/demolition_man,is,nice
+m/terminator,is,nice
+m/dumb_and_dumber,features the theme,the world
+m/hot_tub_time_machine,is,effective
+m/terminator,is,effective
+m/hot_tub_time_machine,is,simple
+m/hot_tub_time_machine,is,fresh
+m/spaceballs,is,fresh
+m/spaceballs,is,obvious
+m/demolition_man,is,successful
+m/hot_tub_time_machine,is,successful
+m/terminator,is,powerful
+m/hot_tub_time_machine,is,decent
+m/hot_tub_time_machine,is,happy
+m/dumb_and_dumber,features the theme,the plot
+m/hot_tub_time_machine,is,flat
+m/terminator,is,excellent
+m/demolition_man,is,personal
+m/demolition_man,features the theme,full review in spanish
+m/spaceballs,features the theme,full review in spanish
+m/hot_tub_time_machine,is,exciting
+m/terminator,is,exciting
+m/hot_tub_time_machine,is,brilliant
+m/terminator,is,brilliant
+m/hot_tub_time_machine,is,heavy
+m/demolition_man,is,worse
+m/hot_tub_time_machine,is,worse
+m/hot_tub_time_machine,is,possible
+m/hot_tub_time_machine,is,sweet
+m/hot_tub_time_machine,is,genuine
+m/terminator,is,genuine
+m/demolition_man,features the theme,humor
+m/spaceballs,features the theme,humor
+m/demolition_man,is,unable
+m/dumb_and_dumber,is,unable
+m/demolition_man,is,single
+m/hot_tub_time_machine,is,wonderful
+m/demolition_man,is,amusing
+m/hot_tub_time_machine,is,amusing
+m/hot_tub_time_machine,is,worthy
+m/dumb_and_dumber,is,memorable
+m/hot_tub_time_machine,is,memorable
+m/terminator,is,memorable
+m/demolition_man,is,late
+m/dumb_and_dumber,is,alive
+m/demolition_man,is,early
+m/spaceballs,is,major
+m/terminator,is,major
+m/hot_tub_time_machine,is,certain
+m/hot_tub_time_machine,features the theme,his wife
+m/dumb_and_dumber,is,pure
+m/spaceballs,is,pure
+m/terminator,is,pure
+m/demolition_man,features the theme,work
+m/hot_tub_time_machine,features the theme,work
+m/terminator,features the theme,work
+m/spaceballs,is,usual
+m/hot_tub_time_machine,is,difficult
+m/demolition_man,is,social
+m/dumb_and_dumber,is,social
+m/hot_tub_time_machine,is,social
+m/demolition_man,features the theme,characters
+m/hot_tub_time_machine,is,strange
+m/spaceballs,is,strange
+m/demolition_man,features the theme,the police
+m/dumb_and_dumber,features the theme,the police
+m/terminator,features the theme,the police
+m/hot_tub_time_machine,features the theme,money
+m/hot_tub_time_machine,is,hilarious
+m/spaceballs,is,hilarious
+m/spaceballs,is,likely
+m/demolition_man,is,violent
+m/demolition_man,is,sharp
+m/terminator,is,sharp
+m/demolition_man,is,awful
+m/hot_tub_time_machine,is,complete
+m/hot_tub_time_machine,features the theme,fact
+m/hot_tub_time_machine,is,central
+m/hot_tub_time_machine,features the theme,the picture
+m/spaceballs,is,like
+m/spaceballs,features the theme,movies
+m/hot_tub_time_machine,is,satisfying
+m/hot_tub_time_machine,features the theme,the filmmakers
+m/hot_tub_time_machine,is,surprising
+m/dumb_and_dumber,is,uneven
+m/hot_tub_time_machine,is,uneven
+m/hot_tub_time_machine,is,thin
+m/hot_tub_time_machine,is,disappointing
+m/dumb_and_dumber,is,dumb
+m/hot_tub_time_machine,is,dumb
+m/dumb_and_dumber,is,stupid
+m/hot_tub_time_machine,is,stupid
+m/hot_tub_time_machine,is,sad
+m/spaceballs,is,sad
+m/demolition_man,is,cool
+m/hot_tub_time_machine,is,cool
+m/hot_tub_time_machine,is,older
+m/hot_tub_time_machine,is,poor
+m/demolition_man,is,cheap
+m/terminator,is,cheap
+m/terminator,features the theme,screen
+m/demolition_man,is,terrible
+m/hot_tub_time_machine,features the theme,sex
+m/terminator,features the theme,sex
+m/spaceballs,is,non
+m/terminator,is,non
+m/hot_tub_time_machine,is,sheer
+m/terminator,is,cold
+m/hot_tub_time_machine,is,actual
+m/hot_tub_time_machine,is,tough
+m/hot_tub_time_machine,is,ridiculous
+m/terminator,is,ridiculous
+m/hot_tub_time_machine,is,half
+m/spaceballs,is,half
+m/hot_tub_time_machine,features the theme,the cast
+m/demolition_man,is,pleasant
+m/hot_tub_time_machine,is,popular
+m/terminator,is,popular
+m/hot_tub_time_machine,is,loud
+m/hot_tub_time_machine,is,tired
+m/hot_tub_time_machine,is,younger
+m/terminator,features the theme,action
+m/demolition_man,is,intense
+m/terminator,is,intense
+m/hot_tub_time_machine,features the theme,comedy
+m/terminator,is,moral
+m/hot_tub_time_machine,is,biggest
+m/terminator,is,physical
+m/hot_tub_time_machine,is,huge
+m/spaceballs,is,huge
+m/hot_tub_time_machine,is,guilty
+m/hot_tub_time_machine,is,political
+m/terminator,is,ambitious
+m/demolition_man,is,open
+m/dumb_and_dumber,is,open
+m/hot_tub_time_machine,is,open
+m/terminator,features the theme,his father
+m/hot_tub_time_machine,is,willing
+m/demolition_man,is,sexual
+m/dumb_and_dumber,is,sexual
+m/hot_tub_time_machine,is,hot
+m/hot_tub_time_machine,is,past
+m/hot_tub_time_machine,is,wild
+m/hot_tub_time_machine,is,remarkable
+m/hot_tub_time_machine,features the theme,viewers
+m/terminator,features the theme,viewers
+m/hot_tub_time_machine,is,superior
+m/terminator,is,superior
+m/hot_tub_time_machine,is,minor
+m/demolition_man,features the theme,the process
+m/hot_tub_time_machine,is,particular
+m/dumb_and_dumber,is,anti
+m/hot_tub_time_machine,is,likable
+m/hot_tub_time_machine,features the theme,a lot
+m/hot_tub_time_machine,is,inventive
+m/terminator,is,inventive
+m/spaceballs,is,finest
+m/spaceballs,is,similar
+m/spaceballs,is,aware
+m/terminator,is,aware
+m/hot_tub_time_machine,is,sentimental
+m/hot_tub_time_machine,features the theme,laughs
+m/spaceballs,features the theme,laughs
+m/hot_tub_time_machine,is,post
+m/demolition_man,is,friendly
+m/dumb_and_dumber,is,friendly
+m/hot_tub_time_machine,is,cute
+m/demolition_man,is,typical
+m/hot_tub_time_machine,is,fantastic
+m/terminator,is,fantastic
+m/demolition_man,is,double
+m/hot_tub_time_machine,is,male
+m/hot_tub_time_machine,is,crazy
+m/hot_tub_time_machine,features the theme,the theater
+m/hot_tub_time_machine,is,shallow
+m/spaceballs,features the theme,the movies
+m/hot_tub_time_machine,is,believable
+m/terminator,is,believable
+m/hot_tub_time_machine,features the theme,women
+m/hot_tub_time_machine,is,lazy
+m/dumb_and_dumber,is,married
+m/hot_tub_time_machine,is,married
+m/spaceballs,is,married
+m/hot_tub_time_machine,is,nearby
+m/spaceballs,is,nearby
+m/hot_tub_time_machine,is,bizarre
+m/dumb_and_dumber,is,current
+m/terminator,is,extraordinary
+m/demolition_man,is,brutal
+m/hot_tub_time_machine,features the theme,date
+m/hot_tub_time_machine,is,lame
+m/terminator,is,pregnant
+m/dumb_and_dumber,features the theme,the money
+m/terminator,is,tense
+m/terminator,features the theme,reality
+m/hot_tub_time_machine,is,middle
+m/demolition_man,is,necessary
+m/hot_tub_time_machine,is,necessary
+m/demolition_man,is,fair
+m/hot_tub_time_machine,is,fair
+m/hot_tub_time_machine,is,drunk
+m/terminator,is,absurd
+m/hot_tub_time_machine,is,lead
+m/dumb_and_dumber,is,minded
+m/hot_tub_time_machine,is,minded
+m/terminator,features the theme,suspense
+m/dumb_and_dumber,features the theme,course
+m/hot_tub_time_machine,features the theme,course
+m/dumb_and_dumber,is,sophisticated
+m/demolition_man,is,fast
+m/hot_tub_time_machine,is,fast
+m/demolition_man,features the theme,the city
+m/dumb_and_dumber,is,total
+m/hot_tub_time_machine,is,total
+m/hot_tub_time_machine,is,outstanding
+m/hot_tub_time_machine,is,derivative
+m/demolition_man,is,pointless
+m/hot_tub_time_machine,is,ugly
+m/hot_tub_time_machine,features the theme,exactly what
+m/spaceballs,is,giant
+m/terminator,is,unknown
+m/hot_tub_time_machine,features the theme,friends
+m/hot_tub_time_machine,is,suspenseful
+m/demolition_man,features the theme,wit
+m/hot_tub_time_machine,is,funnier
+m/hot_tub_time_machine,features the theme,suicide
+m/dumb_and_dumber,is,endless
+m/hot_tub_time_machine,is,multiple
+m/hot_tub_time_machine,features the theme,charm
+m/hot_tub_time_machine,features the theme,a comedy
+m/terminator,is,future
+m/hot_tub_time_machine,is,energetic
+m/dumb_and_dumber,features the theme,energy
+m/dumb_and_dumber,features the theme,the title
+m/hot_tub_time_machine,features the theme,the title
+m/demolition_man,features the theme,prison
+m/hot_tub_time_machine,features the theme,story
+m/demolition_man,features the theme,order
+m/hot_tub_time_machine,is,surprised
+m/hot_tub_time_machine,is,constant
+m/terminator,is,directorial
+m/hot_tub_time_machine,is,quirky
+m/hot_tub_time_machine,is,intimate
+m/demolition_man,is,considerable
+m/spaceballs,is,gentle
+m/hot_tub_time_machine,is,concerned
+m/dumb_and_dumber,is,larger
+m/hot_tub_time_machine,features the theme,the problem
+m/hot_tub_time_machine,features the theme,the point
+m/dumb_and_dumber,is,mental
+m/demolition_man,is,ludicrous
+m/spaceballs,is,ludicrous
+m/hot_tub_time_machine,features the theme,his friends
+m/spaceballs,features the theme,his friends
+m/hot_tub_time_machine,is,likeable
+m/demolition_man,features the theme,romance
+m/terminator,features the theme,ideas
+m/demolition_man,features the location,Los Angeles
+m/terminator,features the location,Los Angeles
+m/hot_tub_time_machine,features the person,God
+m/spaceballs,is,near
+m/terminator,is,near
+m/dumb_and_dumber,features the theme,the screenplay
+m/spaceballs,is,pre
+m/terminator,is,pre
+m/hot_tub_time_machine,is,numerous
+m/hot_tub_time_machine,is,sloppy
+m/dumb_and_dumber,is,dirty
+m/hot_tub_time_machine,features the theme,god
+m/hot_tub_time_machine,is,humorous
+m/spaceballs,is,wise
+m/hot_tub_time_machine,is,rough
+m/dumb_and_dumber,is,natured
+m/hot_tub_time_machine,is,natured
+m/spaceballs,is,natured
+m/demolition_man,is,criminal
+m/terminator,is,criminal
+m/hot_tub_time_machine,is,crude
+m/hot_tub_time_machine,is,normal
+m/terminator,is,expensive
+m/hot_tub_time_machine,features the theme,history
+m/hot_tub_time_machine,is,outrageous
+m/terminator,is,outrageous
+m/demolition_man,is,sci
+m/spaceballs,is,sci
+m/terminator,is,sci
+m/demolition_man,features the theme,control
+m/terminator,features the theme,control
+m/hot_tub_time_machine,features the theme,start
+m/demolition_man,is,conscious
+m/hot_tub_time_machine,is,conscious
+m/hot_tub_time_machine,is,mindless
+m/terminator,is,visceral
+m/terminator,is,frightening
+m/dumb_and_dumber,is,initial
+m/terminator,is,relentless
+m/terminator,is,unaware
+m/demolition_man,features the theme,his men
+m/spaceballs,features the theme,his daughter
+m/demolition_man,is,exceptional
+m/hot_tub_time_machine,is,horrible
+m/demolition_man,is,significant
+m/hot_tub_time_machine,is,awesome
+m/spaceballs,is,harmless
+m/dumb_and_dumber,is,gross
+m/hot_tub_time_machine,is,gross
+m/dumb_and_dumber,features the theme,the idea
+m/hot_tub_time_machine,features the theme,music
+m/demolition_man,features the theme,humour
+m/hot_tub_time_machine,is,insightful
+m/hot_tub_time_machine,is,subversive
+m/hot_tub_time_machine,features the theme,a long time
+m/hot_tub_time_machine,features the theme,direction
+m/hot_tub_time_machine,features the theme,its way
+m/hot_tub_time_machine,features the theme,talent
+m/demolition_man,features the theme,the future
+m/hot_tub_time_machine,features the theme,the future
+m/demolition_man,is,depressing
+m/hot_tub_time_machine,is,super
+m/terminator,is,super
+m/hot_tub_time_machine,features the theme,the premise
+m/terminator,features the theme,the premise
+m/terminator,features the theme,emotion
+m/hot_tub_time_machine,features the theme,his girlfriend
+m/terminator,features the theme,the narrative
+m/hot_tub_time_machine,features the theme,its title
+m/spaceballs,features the theme,the laughs
+m/terminator,is,efficient
+m/dumb_and_dumber,is,jealous
+m/hot_tub_time_machine,is,adolescent
+m/spaceballs,is,misguided
+m/hot_tub_time_machine,is,embarrassing
+m/hot_tub_time_machine,is,satisfied
+m/hot_tub_time_machine,features the theme,a lot of fun
+m/hot_tub_time_machine,features the theme,a good movie
+m/hot_tub_time_machine,is,aged
+m/hot_tub_time_machine,features the theme,the floor
+m/demolition_man,features the theme,special effects
+m/terminator,is,limited
+m/spaceballs,is,unfortunate
+m/hot_tub_time_machine,is,amiable
+m/hot_tub_time_machine,is,iconic
+m/terminator,is,iconic
+m/hot_tub_time_machine,is,juvenile
+m/terminator,features the location,California
+m/hot_tub_time_machine,features the theme,a party
+m/hot_tub_time_machine,features the theme,the water
+m/hot_tub_time_machine,features the theme,all time
+m/hot_tub_time_machine,features the theme,the comedy
+m/hot_tub_time_machine,is,nostalgic
+m/terminator,features the theme,the pair
+m/hot_tub_time_machine,is,surreal
+m/dumb_and_dumber,features the theme,plenty
+m/demolition_man,is,appropriate
+m/dumb_and_dumber,is,broken
+m/demolition_man,features the theme,the building
+m/hot_tub_time_machine,is,consistent
+m/demolition_man,features the theme,a car
+m/terminator,features the theme,a car
+m/spaceballs,features the theme,the air
+m/hot_tub_time_machine,is,casual
+m/hot_tub_time_machine,features the theme,the results
+m/hot_tub_time_machine,is,wacky
+m/hot_tub_time_machine,is,popcorn
+m/hot_tub_time_machine,is,brisk
+m/demolition_man,is,obnoxious
+m/hot_tub_time_machine,is,obnoxious
+m/hot_tub_time_machine,features the theme,drugs
+m/demolition_man,features the theme,[ blu-ray
+m/dumb_and_dumber,features the theme,[ blu-ray
+m/spaceballs,features the theme,[ blu-ray
+m/spaceballs,is,fourth
+m/hot_tub_time_machine,features the theme,bed
+m/terminator,features the theme,the series
+m/hot_tub_time_machine,features the theme,credit
+m/dumb_and_dumber,features the theme,his job
+m/spaceballs,is,sublime
+m/terminator,is,international
+m/terminator,is,artificial
+m/hot_tub_time_machine,is,giddy
+m/spaceballs,is,giddy
+m/terminator,is,wooden
+m/hot_tub_time_machine,is,drunken
+m/terminator,is,vicious
+m/terminator,features the theme,police
+m/hot_tub_time_machine,features the miscellaneous theme,80s
+m/terminator,features the miscellaneous theme,80s
+m/hot_tub_time_machine,features the miscellaneous theme,C
+m/spaceballs,is,hysterical
+m/hot_tub_time_machine,features the theme,the bar
+m/hot_tub_time_machine,features the person,John
+m/terminator,features the person,John
+m/dumb_and_dumber,is,manic
+m/hot_tub_time_machine,is,manic
+m/spaceballs,is,easier
+m/terminator,is,harrowing
+m/spaceballs,features the theme,a world
+m/spaceballs,features the theme,the ship
+m/hot_tub_time_machine,is,fest
+m/spaceballs,is,plain
+m/dumb_and_dumber,features the theme,laughter
+m/hot_tub_time_machine,is,crass
+m/dumb_and_dumber,features the theme,her family
+m/hot_tub_time_machine,is,slapstick
+m/hot_tub_time_machine,features the theme,friendship
+m/hot_tub_time_machine,is,nonsensical
+m/hot_tub_time_machine,is,ultra
+m/dumb_and_dumber,features the theme,places
+m/terminator,is,keen
+m/terminator,features the theme,his body
+m/hot_tub_time_machine,features the theme,display
+m/hot_tub_time_machine,is,depressed
+m/hot_tub_time_machine,features the theme,company
+m/terminator,is,flimsy
+m/hot_tub_time_machine,features the theme,its moments
+m/terminator,is,dubious
+m/hot_tub_time_machine,is,idiotic
+m/hot_tub_time_machine,is,estranged
+m/demolition_man,is,healthy
+m/demolition_man,is,underwhelming
+m/spaceballs,is,exquisite
+m/spaceballs,is,adequate
+m/hot_tub_time_machine,is,magic
+m/spaceballs,features the theme,space
+m/hot_tub_time_machine,is,gay
+m/hot_tub_time_machine,features the theme,redemption
+m/demolition_man,is,noisy
+m/hot_tub_time_machine,is,laden
+m/hot_tub_time_machine,features the theme,a fight
+m/hot_tub_time_machine,features the theme,the special effects
+m/hot_tub_time_machine,is,illegal
+m/hot_tub_time_machine,is,raucous
+m/dumb_and_dumber,features the theme,the airport
+m/hot_tub_time_machine,is,vulgar
+m/dumb_and_dumber,is,precise
+m/demolition_man,is,underground
+m/dumb_and_dumber,is,literal
+m/dumb_and_dumber,features the theme,the hotel
+m/hot_tub_time_machine,is,outlandish
+m/terminator,is,nuclear
+m/hot_tub_time_machine,features the theme,insight
+m/terminator,is,lean
+m/hot_tub_time_machine,is,tasteless
+m/hot_tub_time_machine,is,russian
+m/demolition_man,is,sleek
+m/dumb_and_dumber,is,rude
+m/terminator,features the theme,the franchise
+m/hot_tub_time_machine,features the theme,the eye
+m/terminator,features the theme,the tension
+m/hot_tub_time_machine,features the theme,the wall
+m/spaceballs,features the theme,the crew
+m/demolition_man,features the theme,society
+m/hot_tub_time_machine,is,reliable
+m/hot_tub_time_machine,is,raunchy
+m/terminator,is,aesthetic
+m/dumb_and_dumber,is,dopey
+m/dumb_and_dumber,is,uncertain
+m/terminator,is,paranoid
+m/dumb_and_dumber,features the theme,the formula
+m/hot_tub_time_machine,features the theme,john
+m/terminator,features the theme,john
+m/hot_tub_time_machine,is,foul
+m/hot_tub_time_machine,features the theme,expectations
+m/hot_tub_time_machine,is,titular
+m/hot_tub_time_machine,is,inane
+m/dumb_and_dumber,is,irreverent
+m/hot_tub_time_machine,is,irreverent
+m/dumb_and_dumber,features the theme,the journey
+m/demolition_man,is,skeptical
+m/terminator,features the theme,politics
+m/hot_tub_time_machine,is,harder
+m/hot_tub_time_machine,features the theme,dreams
+m/dumb_and_dumber,is,esque
+m/hot_tub_time_machine,is,deaf
+m/terminator,features the theme,storytelling
+m/hot_tub_time_machine,is,sole
+m/hot_tub_time_machine,features the theme,the thing
+m/hot_tub_time_machine,features the miscellaneous theme,Russian
+m/terminator,features the theme,the sequel
+m/terminator,is,fewer
+m/spaceballs,features the theme,the planet
+m/dumb_and_dumber,features the person,Mary
+m/terminator,features the theme,guns
+m/hot_tub_time_machine,features the theme,the present
+m/hot_tub_time_machine,is,maximum
+m/terminator,is,choppy
+m/hot_tub_time_machine,features the miscellaneous theme,R
+m/demolition_man,is,inspired
+m/hot_tub_time_machine,is,inspired
+m/terminator,features the theme,the lead
+m/terminator,is,un
+m/spaceballs,is,incompetent
+m/hot_tub_time_machine,features the theme,parental content review
+m/demolition_man,is,20th
+m/demolition_man,features the theme,irony
+m/hot_tub_time_machine,is,upbeat
+m/hot_tub_time_machine,is,grown
+m/hot_tub_time_machine,features the theme,his sister
+m/terminator,is,menacing
+m/dumb_and_dumber,is,witted
+m/demolition_man,features the theme,sympathy
+m/hot_tub_time_machine,features the theme,the trailer
+m/spaceballs,features the theme,silliness
+m/demolition_man,features the theme,cheek
+m/dumb_and_dumber,features the theme,the apartment
+m/dumb_and_dumber,features the theme,his apartment
+m/hot_tub_time_machine,features the theme,genius
+m/terminator,features the theme,genius
+m/dumb_and_dumber,features the theme,a date
+m/hot_tub_time_machine,is,throwaway
+m/hot_tub_time_machine,is,alcoholic
+m/hot_tub_time_machine,features the theme,a good way
+m/hot_tub_time_machine,features the theme,this material
+m/demolition_man,features the theme,explosions
+m/terminator,features the theme,the ages
+m/terminator,features the theme,a boy
+m/hot_tub_time_machine,is,childish
+m/hot_tub_time_machine,features the theme,honor
+m/spaceballs,features the theme,honor
+m/hot_tub_time_machine,is,reasonable
+m/hot_tub_time_machine,features the theme,the concept
+m/hot_tub_time_machine,is,tolerable
+m/demolition_man,features the theme,the action scenes
+m/hot_tub_time_machine,is,longtime
+m/hot_tub_time_machine,is,exploitative
+m/hot_tub_time_machine,is,outright
+m/hot_tub_time_machine,features the theme,the events
+m/dumb_and_dumber,features the theme,gags
+m/terminator,is,heady
+m/hot_tub_time_machine,features the person,Nick
+m/dumb_and_dumber,features the person,Harry
+m/spaceballs,features the miscellaneous theme,Star Wars
+m/dumb_and_dumber,features the theme,mary
+m/hot_tub_time_machine,features the theme,the gags
+m/spaceballs,is,rampant
+m/terminator,is,quintessential
+m/hot_tub_time_machine,is,fearless
+m/dumb_and_dumber,is,facial
+m/dumb_and_dumber,is,dim
+m/hot_tub_time_machine,is,clichd
+m/hot_tub_time_machine,features the theme,momentum
+m/demolition_man,is,murderous
+m/terminator,is,murderous
+m/dumb_and_dumber,features the theme,production
+m/hot_tub_time_machine,features the theme,the writers
+m/demolition_man,is,frozen
+m/hot_tub_time_machine,features the theme,youth
+m/demolition_man,is,sly
+m/spaceballs,features the theme,its parts
+m/dumb_and_dumber,features the theme,innocence
+m/hot_tub_time_machine,is,obligatory
+m/dumb_and_dumber,features the theme,gas
+m/hot_tub_time_machine,is,unwieldy
+m/dumb_and_dumber,is,slightest
+m/demolition_man,is,unapologetic
+m/terminator,features the theme,the police station
+m/hot_tub_time_machine,is,demented
+m/hot_tub_time_machine,features the theme,the hell
+m/demolition_man,features the theme,a long way
+m/hot_tub_time_machine,features the theme,teenagers
+m/dumb_and_dumber,is,junior
+m/spaceballs,is,ominous
+m/demolition_man,features the theme,weapons
+m/terminator,features the theme,the truck
+m/hot_tub_time_machine,features the theme,the business
+m/spaceballs,is,royal
+m/terminator,features the person,Sarah
+m/demolition_man,features the theme,boot
+m/demolition_man,features the theme,confusion
+m/demolition_man,features the theme,his gang
+m/demolition_man,features the theme,refuge
+m/terminator,features the theme,refuge
+m/demolition_man,is,oppressive
+m/hot_tub_time_machine,features the theme,no way
+m/demolition_man,features the theme,face
+m/dumb_and_dumber,is,intentional
+m/dumb_and_dumber,features the theme,the duo
+m/demolition_man,is,futuristic
+m/terminator,is,futuristic
+m/terminator,is,blooded
+m/spaceballs,features the theme,a laugh
+m/terminator,features the theme,a laugh
+m/hot_tub_time_machine,features the theme,the field
+m/hot_tub_time_machine,is,heated
+m/hot_tub_time_machine,is,atrocious
+m/hot_tub_time_machine,is,lukewarm
+m/hot_tub_time_machine,features the theme,the band
+m/terminator,features the theme,science fiction
+m/hot_tub_time_machine,is,truthful
+m/demolition_man,features the theme,our time
+m/hot_tub_time_machine,features the theme,the mystery
+m/hot_tub_time_machine,is,uproarious
+m/hot_tub_time_machine,features the miscellaneous theme,Movies for the Masses
+m/terminator,features the theme,the survivors
+m/spaceballs,features the theme,the films
+m/dumb_and_dumber,features the theme,the universe
+m/demolition_man,features the theme,an action movie
+m/hot_tub_time_machine,features the theme,the play
+m/terminator,features the theme,this role
+m/dumb_and_dumber,features the theme,an argument
+m/hot_tub_time_machine,features the theme,full review at movies
+m/hot_tub_time_machine,features the theme,sweetness
+m/hot_tub_time_machine,features the theme,characterization
+m/spaceballs,is,inclined
+m/demolition_man,features the theme,his role
+m/demolition_man,features the theme,their eyes
+m/hot_tub_time_machine,is,slapdash
+m/terminator,features the theme,its kind
+m/hot_tub_time_machine,is,funniest
+m/terminator,is,amazed
+m/hot_tub_time_machine,features the theme,the-wall
+m/dumb_and_dumber,features the person,Bobby
+m/dumb_and_dumber,features the theme,the rest of the movie
+m/hot_tub_time_machine,features the theme,the rest of the movie
+m/spaceballs,features the location,Broadway
+m/hot_tub_time_machine,is,rowdy
+m/hot_tub_time_machine,features the theme,the real thing
+m/terminator,features the theme,menace
+m/hot_tub_time_machine,features the theme,absurdity
+m/spaceballs,is,metaphysical
+m/hot_tub_time_machine,is,triple
+m/demolition_man,features the theme,flames
+m/hot_tub_time_machine,features the theme,the edges
+m/hot_tub_time_machine,features the theme,excess
+m/dumb_and_dumber,features the theme,retaliation
+m/terminator,is,rip
+m/hot_tub_time_machine,features the theme,a missed opportunity
+m/dumb_and_dumber,features the theme,his love
+m/demolition_man,features the theme,no reason
+m/hot_tub_time_machine,features the theme,rock
+m/dumb_and_dumber,features the theme,a hoot
+m/dumb_and_dumber,features the theme,ingenuity
+m/spaceballs,is,lucrative
+m/dumb_and_dumber,features the theme,the trouble
+m/spaceballs,is,robotic
+m/terminator,features the theme,the map
+m/demolition_man,features the theme,risk
+m/hot_tub_time_machine,is,misogynistic
+m/demolition_man,is,undercut
+m/spaceballs,features the miscellaneous theme,non
+m/hot_tub_time_machine,is,pervasive
+m/hot_tub_time_machine,features the theme,a career
+m/dumb_and_dumber,is,dumbest
+m/hot_tub_time_machine,is,dumbest
+m/hot_tub_time_machine,is,bearable
+m/hot_tub_time_machine,features the organization,CNN
+m/dumb_and_dumber,features the theme,clothes
+m/terminator,features the theme,clothes
+m/hot_tub_time_machine,is,generational
+m/hot_tub_time_machine,features the theme,game
+m/hot_tub_time_machine,is,incorrect
+m/hot_tub_time_machine,features the theme,guys
+m/hot_tub_time_machine,features the theme,culture
+m/hot_tub_time_machine,is,nagging
+m/hot_tub_time_machine,is,coarse
+m/terminator,features the theme,solid performances
+m/hot_tub_time_machine,features the miscellaneous theme,' 80s
+m/demolition_man,features the theme,no sense
+m/terminator,features the theme,a nightclub
+m/hot_tub_time_machine,features the organization,MTV
+m/hot_tub_time_machine,features the theme,nick
+m/terminator,features the theme,my mind
+m/hot_tub_time_machine,is,luxurious
+m/terminator,is,propulsive
+m/hot_tub_time_machine,is,alternative
+m/hot_tub_time_machine,features the theme,a compliment
+m/terminator,is,paced
+m/demolition_man,features the theme,explosives
+m/spaceballs,features the theme,the moon
+m/terminator,features the person,Sc
+m/hot_tub_time_machine,features the person,John Hughes
+m/demolition_man,features the theme,ice
+m/terminator,features the theme,a nightmare
+m/terminator,is,functional
+m/hot_tub_time_machine,features the theme,a twist
+m/dumb_and_dumber,features the theme,dogs
+m/hot_tub_time_machine,features the person,Kelly
+m/hot_tub_time_machine,is,crappy
+m/hot_tub_time_machine,features the theme,their families
+m/hot_tub_time_machine,features the theme,nudity
+m/dumb_and_dumber,features the theme,coffee
+m/hot_tub_time_machine,features the miscellaneous theme,L
+m/dumb_and_dumber,features the theme,the van
+m/terminator,is,unstoppable
+m/hot_tub_time_machine,features the theme,starts
+m/hot_tub_time_machine,features the theme,structure
+m/demolition_man,features the theme,gunfire
+m/terminator,features the theme,gunfire
+m/hot_tub_time_machine,features the theme,cast
+m/hot_tub_time_machine,features the theme,hearts
+m/hot_tub_time_machine,features the theme,the guys
+m/terminator,features the theme,victory
+m/demolition_man,features the theme,the prison
+m/demolition_man,is,bodily
+m/dumb_and_dumber,is,bodily
+m/hot_tub_time_machine,is,screwball
+m/hot_tub_time_machine,is,unhinged
+m/terminator,features the theme,sci-fi
+m/spaceballs,is,villainous
+m/dumb_and_dumber,features the theme,the funniest
+m/terminator,features the theme,celluloid
+m/terminator,is,delusional
+m/hot_tub_time_machine,features the theme,star power
+m/hot_tub_time_machine,features the person,Adam
+m/hot_tub_time_machine,features the person,Duke
+m/hot_tub_time_machine,features the person,Paul Chambers
+m/hot_tub_time_machine,features the theme,fits
+m/hot_tub_time_machine,is,cryptic
+m/terminator,is,cryptic
+m/hot_tub_time_machine,features the theme,the screenwriters
+m/hot_tub_time_machine,is,inescapable
+m/hot_tub_time_machine,features the theme,so much fun
+m/demolition_man,features the theme,the opening credits
+m/hot_tub_time_machine,features the theme,adam
+m/hot_tub_time_machine,features the theme,memories
+m/hot_tub_time_machine,features the organization,HBO
+m/dumb_and_dumber,features the theme,chuckles
+m/hot_tub_time_machine,features the theme,chuckles
+m/demolition_man,features the theme,eye candy
+m/hot_tub_time_machine,features the person,Jenny
+m/dumb_and_dumber,features the theme,a motel
+m/hot_tub_time_machine,features the theme,goofy
+m/spaceballs,features the theme,a cave
+m/spaceballs,features the theme,fuel
+m/hot_tub_time_machine,is,forgivable
+m/terminator,features the miscellaneous theme,The Matrix
+m/hot_tub_time_machine,features the theme,a reminder
+m/hot_tub_time_machine,features the theme,a waste of time
+m/hot_tub_time_machine,is,kinky
+m/dumb_and_dumber,is,quotable
+m/spaceballs,features the theme,a diner
+m/terminator,features the theme,doom
+m/hot_tub_time_machine,features the theme,the last moment
+m/demolition_man,features the organization,LAPD
+m/demolition_man,features the theme,ground
+m/hot_tub_time_machine,is,homosexual
+m/hot_tub_time_machine,features the theme,hair
+m/terminator,is,meditative
+m/spaceballs,is,silliest
+m/terminator,features the theme,a compelling story
+m/hot_tub_time_machine,features the theme,the satire
+m/hot_tub_time_machine,features the theme,grownups
+m/terminator,features the theme,emotional resonance
+m/hot_tub_time_machine,is,insignificant
+m/hot_tub_time_machine,is,oversized
+m/hot_tub_time_machine,is,acid
+m/terminator,is,audio
+m/terminator,features the theme,the gut
+m/hot_tub_time_machine,features the theme,closure
+m/dumb_and_dumber,is,peerless
+m/demolition_man,features the theme,the information
+m/hot_tub_time_machine,features the theme,jenny
+m/hot_tub_time_machine,is,alert
+m/dumb_and_dumber,features the theme,a gas station
+m/terminator,features the theme,a gas station
+m/dumb_and_dumber,features the theme,the toilet
+m/hot_tub_time_machine,features the miscellaneous theme,F
+m/demolition_man,features the theme,human behavior
+m/dumb_and_dumber,features the theme,the filmmaking
+m/hot_tub_time_machine,is,reclusive
+m/demolition_man,features the theme,cheap thrills
+m/terminator,features the person,Kyle
+m/hot_tub_time_machine,is,smutty
+m/demolition_man,features the theme,his escape
+m/hot_tub_time_machine,is,brawny
+m/hot_tub_time_machine,is,oral
+m/demolition_man,features the person,Stallone
+m/hot_tub_time_machine,is,star
+m/spaceballs,features the person,Brooks
+m/hot_tub_time_machine,features the theme,pratfalls
+m/spaceballs,features the theme,pratfalls
+m/hot_tub_time_machine,is,laced
+m/hot_tub_time_machine,features the theme,the friends
+m/hot_tub_time_machine,is,lewd
+m/dumb_and_dumber,features the location,Colorado
+m/demolition_man,features the theme,his behavior
+m/hot_tub_time_machine,features the theme,the chemistry
+m/dumb_and_dumber,features the theme,country
+m/hot_tub_time_machine,features the theme,players
+m/demolition_man,is,brutish
+m/dumb_and_dumber,features the theme,best friends
+m/spaceballs,features the theme,more money
+m/terminator,features the person,Arnold
+m/spaceballs,features the person,George Lucas
+m/spaceballs,features the person,Mel Brooks
+m/hot_tub_time_machine,features the theme,advertising
+m/dumb_and_dumber,features the person,Jerry Lewis
+m/terminator,features the person,Arnold Schwarzenegger
+m/spaceballs,features the theme,the wit
+m/terminator,is,external
+m/hot_tub_time_machine,features the theme,boy
+m/demolition_man,features the theme,action fans
+m/hot_tub_time_machine,features the theme,roll
+m/hot_tub_time_machine,features the miscellaneous theme,The Hangover
+m/terminator,features the theme,victims
+m/hot_tub_time_machine,features the theme,a hole
+m/hot_tub_time_machine,features the person,Lou
+m/spaceballs,is,wildest
+m/terminator,features the theme,fortune
+m/dumb_and_dumber,is,strapped
+m/demolition_man,is,psychopathic
+m/dumb_and_dumber,is,lowbrow
+m/hot_tub_time_machine,is,lowbrow
+m/hot_tub_time_machine,features the theme,no masterpiece
+m/hot_tub_time_machine,is,unrepentant
+m/hot_tub_time_machine,features the theme,notice
+m/terminator,features the person,James Cameron
+m/hot_tub_time_machine,features the theme,spite of itself
+m/hot_tub_time_machine,features the theme,our heroes
+m/demolition_man,features the person,Sandra Bullock
+m/hot_tub_time_machine,is,ubiquitous
+m/dumb_and_dumber,features the theme,comic timing
+m/hot_tub_time_machine,features the theme,hatred
+m/demolition_man,features the theme,the threat
+m/hot_tub_time_machine,is,edgier
+m/dumb_and_dumber,features the theme,vulgarity
+m/dumb_and_dumber,features the theme,its purpose
+m/dumb_and_dumber,features the theme,the funny bone
+m/hot_tub_time_machine,is,caring
+m/hot_tub_time_machine,features the theme,goodwill
+m/dumb_and_dumber,features the theme,the kidnappers
+m/demolition_man,features the theme,the noise
+m/terminator,features the miscellaneous theme,Aliens
+m/hot_tub_time_machine,is,wonky
+m/hot_tub_time_machine,features the theme,a right
+m/hot_tub_time_machine,features the person,Jacob
+m/hot_tub_time_machine,features the miscellaneous theme,Reagan
+m/terminator,features the miscellaneous theme,Terminator
+m/dumb_and_dumber,features the theme,cross
+m/dumb_and_dumber,features the person,Farrelly
+m/terminator,features the person,Schwarzenegger
+m/demolition_man,features the miscellaneous theme,Man
+m/dumb_and_dumber,features the person,Jim Carrey
+m/terminator,features the theme,good reason
+m/demolition_man,features the person,Sylvester Stallone
+m/demolition_man,features the theme,windows
+m/hot_tub_time_machine,features the theme,the emphasis
+m/terminator,features the theme,the near future
+m/terminator,is,concentrated
+m/spaceballs,features the theme,star wars
+m/dumb_and_dumber,is,kidnapped
+m/dumb_and_dumber,features the theme,ignorance
+m/hot_tub_time_machine,is,halfhearted
+m/terminator,is,unborn
+m/dumb_and_dumber,features the theme,the max
+m/hot_tub_time_machine,features the person,Cusack
+m/demolition_man,features the theme,hostages
+m/terminator,features the theme,a police car
+m/demolition_man,is,untouched
+m/terminator,features the theme,some level
+m/hot_tub_time_machine,features the miscellaneous theme,Eighties
+m/terminator,features the person,Te
+m/hot_tub_time_machine,features the theme,mail
+m/demolition_man,features the theme,the police force
+m/demolition_man,features the theme,bonkers
+m/dumb_and_dumber,features the theme,the slapstick
+m/terminator,features the theme,the production design
+m/spaceballs,features the theme,an alien
+m/hot_tub_time_machine,features the person,Robinson
+m/hot_tub_time_machine,features the person,John Cusack
+m/hot_tub_time_machine,features the person,Po
+m/hot_tub_time_machine,features the theme,the final scenes
+m/demolition_man,features the theme,the hostages
+m/hot_tub_time_machine,features the theme,jacob
+m/demolition_man,features the theme,the food
+m/hot_tub_time_machine,features the theme,mileage
+m/terminator,features the theme,his motorcycle
+m/spaceballs,features the theme,the code
+m/terminator,features the person,rzenegger
+m/demolition_man,features the theme,product placement
+m/hot_tub_time_machine,features the theme,an idiot
+m/hot_tub_time_machine,features the theme,genuine laughs
+m/demolition_man,features the theme,in-jokes
+m/terminator,features the theme,hire
+m/hot_tub_time_machine,features the theme,indifference
+m/demolition_man,features the theme,a museum
+m/terminator,features the theme,machines
+m/hot_tub_time_machine,is,unlocked
+m/demolition_man,features the theme,crashes
+m/terminator,features the theme,every respect
+m/dumb_and_dumber,is,laughless
+m/hot_tub_time_machine,features the theme,his band
+m/dumb_and_dumber,is,indicative
+m/terminator,features the person,Cameron
+m/hot_tub_time_machine,features the theme,some big laughs
+m/spaceballs,features the theme,some big laughs
+m/hot_tub_time_machine,features the miscellaneous theme,Groundhog Day
+m/terminator,is,inauthentic
+m/dumb_and_dumber,features the theme,a fine film
+m/hot_tub_time_machine,features the theme,the hangover
+m/hot_tub_time_machine,features the theme,multiple levels
+m/spaceballs,is,sparkly
+m/hot_tub_time_machine,is,aggravating
+m/dumb_and_dumber,is,execrable
+m/spaceballs,features the theme,pizza
+m/hot_tub_time_machine,features the person,Michael Jackson
+m/hot_tub_time_machine,features the theme,a time machine
+m/terminator,features the theme,another car
+m/hot_tub_time_machine,features the theme,memory lane
+m/spaceballs,is,diminutive
+m/hot_tub_time_machine,features the miscellaneous theme,Hangover
+m/dumb_and_dumber,features the theme,dumb
+m/dumb_and_dumber,features the miscellaneous theme,Du
+m/spaceballs,features the theme,all these years
+m/dumb_and_dumber,features the person,Lloyd
+m/hot_tub_time_machine,is,wry
+m/dumb_and_dumber,is,abominable
+m/spaceballs,features the organization,V
+m/hot_tub_time_machine,features the theme,high concept
+m/hot_tub_time_machine,features the person,Chevy Chase
+m/demolition_man,is,subliminal
+m/hot_tub_time_machine,features the theme,the resort
+m/dumb_and_dumber,features the theme,a bulletproof vest
+m/hot_tub_time_machine,features the theme,an actual movie
+m/demolition_man,features the location,San Diego
+m/terminator,is,lo
+m/terminator,features the theme,the flesh
+m/hot_tub_time_machine,features the theme,a trifle
+m/hot_tub_time_machine,features the theme,the passage of time
+m/hot_tub_time_machine,features the theme,the '
+m/spaceballs,is,arranged
+m/hot_tub_time_machine,features the theme,et al
+m/demolition_man,features the theme,the warden
+m/dumb_and_dumber,features the theme,a briefcase
+m/spaceballs,is,untimely
+m/hot_tub_time_machine,features the theme,their youth
+m/demolition_man,is,unauthorized
+m/hot_tub_time_machine,is,cocked
+m/terminator,is,austrian
+m/hot_tub_time_machine,is,venal
+m/hot_tub_time_machine,is,formative
+m/hot_tub_time_machine,features the theme,sci-fi fans
+m/hot_tub_time_machine,features the theme,another era
+m/demolition_man,features the person,Phoenix
+m/hot_tub_time_machine,features the theme,regrets
+m/spaceballs,is,eligible
+m/demolition_man,features the theme,firearms
+m/terminator,features the theme,a motorcycle
+m/hot_tub_time_machine,features the miscellaneous theme,Back to the Future
+m/hot_tub_time_machine,features the theme,most moviegoers
+m/dumb_and_dumber,features the theme,an art form
+m/hot_tub_time_machine,is,lite
+m/terminator,features the miscellaneous theme,Austrian
+m/hot_tub_time_machine,is,naff
+m/hot_tub_time_machine,features the theme,familiar faces
+m/dumb_and_dumber,is,maior
+m/dumb_and_dumber,is,complementary
+m/terminator,is,cartoony
+m/terminator,is,pc
+m/hot_tub_time_machine,features the miscellaneous theme,Miami Vice
+m/dumb_and_dumber,features the person,Farrellys
+m/dumb_and_dumber,features the person,Carrey
+m/dumb_and_dumber,features the theme,a true original
+m/demolition_man,features the theme,the rubble
+m/dumb_and_dumber,features the theme,the briefcase
+m/demolition_man,features the theme,fireballs
+m/terminator,features the theme,the sci-fi genre
+m/hot_tub_time_machine,features the theme,machine
+m/terminator,features the theme,the resistance
+m/terminator,features the theme,a monster movie
+m/dumb_and_dumber,features the theme,that score
+m/terminator,features the miscellaneous theme,The Terminator
+m/dumb_and_dumber,is,toothed
+m/demolition_man,features the theme,their cause
+m/hot_tub_time_machine,features the theme,its humour
+m/hot_tub_time_machine,features the theme,arrested development
+m/dumb_and_dumber,features the location,Nebraska
+m/demolition_man,features the theme,any measure
+m/hot_tub_time_machine,features the theme,travel
+m/dumb_and_dumber,features the person,Jeff Daniels
+m/hot_tub_time_machine,features the theme,an evening
+m/hot_tub_time_machine,features the theme,out-loud
+m/demolition_man,features the theme,the police chief
+m/hot_tub_time_machine,is,homophobic
+m/demolition_man,features the theme,manslaughter
+m/hot_tub_time_machine,features the theme,bad behavior
+m/spaceballs,features the theme,bad jokes
+m/hot_tub_time_machine,features the theme,groundhog day
+m/hot_tub_time_machine,features the person,Glover
+m/demolition_man,is,taboo
+m/dumb_and_dumber,features the theme,lloyd
+m/terminator,features the theme,necessity
+m/spaceballs,is,gravitational
+m/terminator,features the theme,a breath
+m/demolition_man,is,spartan
+m/terminator,features the theme,the ensuing chase
+m/spaceballs,features the theme,a prince
+m/hot_tub_time_machine,features the theme,the rooftop
+m/dumb_and_dumber,features the theme,the ransom money
+m/dumb_and_dumber,features the theme,nicholas
+m/spaceballs,features the theme,her wedding
+m/hot_tub_time_machine,features the theme,the best parts
+m/demolition_man,features the theme,action-adventure
+m/terminator,is,heedless
+m/hot_tub_time_machine,features the theme,sex jokes
+m/dumb_and_dumber,features the theme,dumber
+m/hot_tub_time_machine,features the miscellaneous theme,Gen X
+m/hot_tub_time_machine,features the theme,80s
+m/hot_tub_time_machine,features the theme,the lion
+m/hot_tub_time_machine,features the theme,what the hell
+m/hot_tub_time_machine,features the theme,cusack
+m/hot_tub_time_machine,is,disorderly
+m/terminator,features the theme,a pickup truck
+m/demolition_man,features the person,Snipes
+m/spaceballs,features the theme,his allies
+m/hot_tub_time_machine,features the theme,their experiences
+m/terminator,features the theme,the film's flaws
+m/dumb_and_dumber,features the miscellaneous theme,Dumb and Dumber
+m/hot_tub_time_machine,features the theme,wry
+m/dumb_and_dumber,features the theme,the crooks
+m/hot_tub_time_machine,features the person,Sarah Palin
+m/spaceballs,features the theme,decline
+m/hot_tub_time_machine,features the theme,the tub
+m/terminator,features the theme,grabs
+m/terminator,features the miscellaneous theme,PC
+m/demolition_man,features the theme,bodily fluids
+m/hot_tub_time_machine,features the theme,a very funny movie
+m/terminator,features the theme,a parking lot
+m/hot_tub_time_machine,features the miscellaneous theme,Anchorman
+m/hot_tub_time_machine,features the theme,robinson
+m/spaceballs,features the theme,plain sight
+m/hot_tub_time_machine,features the theme,feet
+m/dumb_and_dumber,features the location,Rhode Island
+m/demolition_man,features the theme,phoenix
+m/terminator,features the theme,telephone
+m/terminator,features the theme,the surreal
+m/demolition_man,features the person,Wesley Snipes
+m/dumb_and_dumber,features the theme,its influences
+m/hot_tub_time_machine,features the theme,his destiny
+m/hot_tub_time_machine,features the theme,gay jokes
+m/hot_tub_time_machine,features the theme,the whole point
+m/spaceballs,features the person,Roland
+m/hot_tub_time_machine,features the theme,ode
+m/demolition_man,features the theme,an abandoned building
+m/hot_tub_time_machine,features the theme,foul language
+m/terminator,is,cyberpunk
+m/hot_tub_time_machine,is,justifiable
+m/hot_tub_time_machine,features the theme,a lead
+m/hot_tub_time_machine,features the theme,grown men
+m/dumb_and_dumber,features the theme,the-year
+m/hot_tub_time_machine,features the person,Pink
+m/hot_tub_time_machine,features the theme,velocity
+m/terminator,is,indiscriminate
+m/terminator,features the miscellaneous theme,The Road Warrior
+m/hot_tub_time_machine,features the theme,sense of it
+m/hot_tub_time_machine,features the miscellaneous theme,Gen-X
+m/terminator,features the theme,both movies
+m/hot_tub_time_machine,features the theme,only time
+m/demolition_man,features the theme,his share
+m/terminator,is,blazing
+m/demolition_man,features the theme,sexual intercourse
+m/dumb_and_dumber,features the theme,his medication
+m/demolition_man,features the theme,kissing
+m/hot_tub_time_machine,features the theme,genuine warmth
+m/demolition_man,features the miscellaneous theme,De
+m/dumb_and_dumber,features the miscellaneous theme,Three Stooges
+m/dumb_and_dumber,features the theme,a hitchhiker
+m/spaceballs,features the theme,crash-land
+m/hot_tub_time_machine,features the theme,its absurdity
+m/hot_tub_time_machine,features the theme,truth in advertising
+m/dumb_and_dumber,features the theme,the terminal
+m/spaceballs,features the person,Yo
+m/hot_tub_time_machine,features the theme,riot
+m/hot_tub_time_machine,features the theme,its trailers
+m/terminator,features the theme,the road warrior
+m/spaceballs,features the organization,Force
+m/hot_tub_time_machine,features the theme,a good father
+m/dumb_and_dumber,is,abdominal
+m/spaceballs,features the theme,their captors
+m/hot_tub_time_machine,features the organization,Hollywood
+m/demolition_man,is,cryogenic
+m/spaceballs,features the theme,valium
+m/demolition_man,features the theme,security cameras
+m/terminator,features the theme,machinery
+m/terminator,is,proactive
+m/hot_tub_time_machine,features the theme,the vortex
+m/spaceballs,features the theme,the button
+m/demolition_man,is,thermal
+m/terminator,features the organization,Resistance
+m/spaceballs,features the theme,the escapees
+m/terminator,features the theme,the movie's strength
+m/hot_tub_time_machine,features the theme,carbon monoxide poisoning
+m/hot_tub_time_machine,features the theme,the saying
+m/hot_tub_time_machine,features the theme,glover
+m/demolition_man,features the theme,human hands
+m/dumb_and_dumber,features the theme,serious consideration
+m/spaceballs,features the theme,their own right
+m/hot_tub_time_machine,features the miscellaneous theme,Funny People
+m/spaceballs,is,narcoleptic
+m/hot_tub_time_machine,features the theme,their breakup
+m/terminator,is,christmas
+m/hot_tub_time_machine,features the miscellaneous theme,Su
+m/hot_tub_time_machine,features the miscellaneous theme,Snakes on a Plane
+m/dumb_and_dumber,features the theme,a wrong turn
+m/spaceballs,features the person,Ain
+m/hot_tub_time_machine,features the miscellaneous theme,Wild Hogs
+m/spaceballs,features the theme,this task
+m/hot_tub_time_machine,features the theme,penis jokes
+m/hot_tub_time_machine,features the theme,all the rage
+m/hot_tub_time_machine,features the theme,character arcs
+m/terminator,is,pickup
+m/spaceballs,is,da
+m/demolition_man,features the theme,everything he got
+m/dumb_and_dumber,features the theme,all the odds
+m/hot_tub_time_machine,is,advertised
+m/hot_tub_time_machine,features the theme,the phenomenon
+m/hot_tub_time_machine,features the theme,the best bits
+m/spaceballs,features the theme,an astronaut
+m/spaceballs,features the organization,Mercedes
+m/hot_tub_time_machine,features the theme,political incorrectness
+m/dumb_and_dumber,features the theme,the gala
+m/hot_tub_time_machine,features the theme,a fork
+m/spaceballs,features the theme,blazing saddles
+m/dumb_and_dumber,features the theme,the suite
+m/spaceballs,features the theme,the same vein
+m/terminator,features the theme,punk
+m/demolition_man,features the theme,intense action
+m/dumb_and_dumber,features the theme,roommates
+m/hot_tub_time_machine,features the theme,clever plotting
+m/terminator,features the theme,a stroke of genius
+m/hot_tub_time_machine,features the theme,his backpack
+m/dumb_and_dumber,features the theme,a gala
+m/dumb_and_dumber,features the person,John Belushi
+m/hot_tub_time_machine,features the theme,pink
+m/hot_tub_time_machine,features the theme,a smart comedy
+m/hot_tub_time_machine,features the theme,manic energy
+m/terminator,features the theme,the final confrontation
+m/spaceballs,features the person,Sand
+m/hot_tub_time_machine,features the theme,goodies
+m/terminator,features the theme,science fiction cinema
+m/hot_tub_time_machine,features the person,Crispin Glover
+m/dumb_and_dumber,is,remiss
+m/hot_tub_time_machine,features the theme,their new lives
+m/terminator,features the theme,the best action movies
+m/hot_tub_time_machine,features the theme,great comedy
+m/terminator,is,cyborg
+m/dumb_and_dumber,features the theme,the adult world
+m/demolition_man,is,pacifist
+m/hot_tub_time_machine,features the person,Rob Corddry
+m/spaceballs,features the theme,real bite
+m/demolition_man,features the theme,personal freedom
+m/demolition_man,features the miscellaneous theme,Last Action Hero
+m/hot_tub_time_machine,features the theme,the profanity
+m/demolition_man,features the theme,their disposal
+m/hot_tub_time_machine,is,mic
+m/hot_tub_time_machine,features the organization,DeLorean
+m/spaceballs,is,unforgiveable
+m/hot_tub_time_machine,features the theme,this raunchy
+m/dumb_and_dumber,features the theme,the hotel bar
+m/hot_tub_time_machine,is,nutso
+m/spaceballs,features the person,Dot
+m/terminator,features the theme,pretention
+m/demolition_man,features the theme,a great villain
+m/hot_tub_time_machine,features the miscellaneous theme,Hot Tub Time Machine
+m/hot_tub_time_machine,features the theme,a hot tub
+m/spaceballs,features the theme,his sense of humor
+m/dumb_and_dumber,features the miscellaneous theme,The Mask
+m/demolition_man,features the theme,your preconceptions
+m/terminator,features the theme,its claim
+m/hot_tub_time_machine,features the person,Craig Robinson
+m/demolition_man,features the theme,several guards
+m/terminator,features the theme,the terminator
+m/hot_tub_time_machine,features the theme,a comic genius
+m/dumb_and_dumber,features the theme,memorable scenes
+m/terminator,features the theme,the tanker
+m/spaceballs,features the miscellaneous theme,Spaceballs
+m/terminator,is,hydraulic
+m/hot_tub_time_machine,features the theme,tired gags
+m/hot_tub_time_machine,features the theme,the gross-out humor
+m/terminator,features the theme,its niche
+m/dumb_and_dumber,features the theme,rudeness
+m/hot_tub_time_machine,features the theme,a badge of honor
+m/terminator,features the theme,the havoc
+m/hot_tub_time_machine,features the theme,a jacuzzi
+m/dumb_and_dumber,features the miscellaneous theme,Dumb & Dumber
+m/hot_tub_time_machine,features the theme,its r-rating
+m/spaceballs,features the person,Space
+m/terminator,features the theme,the movie adaptation
+m/dumb_and_dumber,features the person,Near
+m/hot_tub_time_machine,features the theme,projectile vomiting
+m/demolition_man,features the theme,terrible acting
+m/spaceballs,features the theme,his expenses
+m/terminator,features the organization,Skynet
+m/hot_tub_time_machine,features the miscellaneous theme,Caligula
+m/spaceballs,features the theme,the star wars series
+m/terminator,features the theme,a nuclear holocaust
+m/spaceballs,features the miscellaneous theme,Space
+m/demolition_man,is,uncivilized
+m/hot_tub_time_machine,features the theme,few viewers
+m/hot_tub_time_machine,features the theme,its own mediocrity
+m/demolition_man,features the theme,cheap gags
+m/dumb_and_dumber,features the theme,tag
+m/terminator,is,sequitur
+m/dumb_and_dumber,features the theme,the comedy genre
+m/hot_tub_time_machine,features the theme,whose sole purpose
+m/hot_tub_time_machine,features the theme,a nearby home
+m/spaceballs,features the theme,dot
+m/demolition_man,features the person,Andrew Dice Clay
+m/hot_tub_time_machine,is,slob
+m/terminator,features the theme,this sci-fi thriller
+m/terminator,features the theme,the incredible hulk
+m/spaceballs,features the theme,most jokes
+m/terminator,features the person,Sarah Connor
+m/spaceballs,is,consiga
+m/hot_tub_time_machine,features the miscellaneous theme,Weird Science
+m/hot_tub_time_machine,features the person,Iggy Pop
+m/terminator,features the person,Terminator
+m/terminator,features the miscellaneous theme,T2
+m/spaceballs,features the person,Starr
+m/dumb_and_dumber,features the person,Shay
+m/hot_tub_time_machine,features the theme,a clever
+m/terminator,features the theme,his pecs
+m/hot_tub_time_machine,features the person,Corddry
+m/demolition_man,features the theme,both the script
+m/hot_tub_time_machine,features the theme,snakes on a plane
+m/demolition_man,features the theme,high-octane action
+m/hot_tub_time_machine,features the theme,the drink
+m/terminator,features the theme,skynet
+m/dumb_and_dumber,is,ingnuo
+m/hot_tub_time_machine,features the theme,our resistance
+m/demolition_man,features the theme,flying bullets
+m/hot_tub_time_machine,features the theme,many jokes
+m/hot_tub_time_machine,features the theme,any expectations
+m/demolition_man,features the person,Huxley
+m/demolition_man,features the theme,skirmishes
+m/hot_tub_time_machine,features the theme,comedy genius
+m/dumb_and_dumber,features the theme,ransom money
+m/hot_tub_time_machine,features the theme,trends
+m/hot_tub_time_machine,features the theme,vulgarities
+m/demolition_man,features the theme,some amusing bits
+m/dumb_and_dumber,features the person,Lauren Holly
+m/demolition_man,features the theme,last action hero
+m/demolition_man,features the theme,the nineties
+m/hot_tub_time_machine,features the theme,kind of a shame
+m/spaceballs,features the theme,a nearby planet
+m/dumb_and_dumber,features the theme,this entire film
+m/hot_tub_time_machine,features the theme,inhibition
+m/hot_tub_time_machine,features the theme,a dip
+m/terminator,features the theme,t2
+m/hot_tub_time_machine,features the theme,a serious disappointment
+m/hot_tub_time_machine,features the miscellaneous theme,Tube
+m/demolition_man,features the location,Santa Barbara
+m/hot_tub_time_machine,features the theme,the console
+m/hot_tub_time_machine,features the theme,a balls to the-wall
+m/hot_tub_time_machine,features the miscellaneous theme,Adventure
+m/dumb_and_dumber,features the location,Aspen
+m/hot_tub_time_machine,features the miscellaneous theme,Future
+m/hot_tub_time_machine,features the miscellaneous theme,Borscht Belt
+m/terminator,is,musclebound
+m/hot_tub_time_machine,features the theme,alf
+m/demolition_man,features the theme,the scraps
+m/hot_tub_time_machine,features the organization,Poison
+m/hot_tub_time_machine,features the theme,wild hogs
+m/hot_tub_time_machine,features the theme,male nudity
+m/spaceballs,features the theme,the ship explodes
+m/demolition_man,features the theme,diseases
+m/hot_tub_time_machine,features the organization,Replacements
+m/spaceballs,features the theme,spaceballs
+m/spaceballs,features the theme,funny movies
+m/dumb_and_dumber,features the theme,laxatives
+m/hot_tub_time_machine,features the theme,childish men
+m/terminator,features the theme,cheap tactics
+m/dumb_and_dumber,features the theme,lauren holly
+m/terminator,features the person,Kyle Reese
+m/dumb_and_dumber,features the theme,lowbrow comedies
+m/hot_tub_time_machine,features the theme,lazy comedy
+m/spaceballs,features the theme,helmet
+m/dumb_and_dumber,features the theme,punching bags
+m/dumb_and_dumber,features the person,Harry Dunne
+m/hot_tub_time_machine,features the person,Lizzy Caplan
+m/dumb_and_dumber,features the person,Lloyd Christmas
+m/hot_tub_time_machine,features the theme,their tasks
+m/spaceballs,features the theme,the overkill
+m/hot_tub_time_machine,features the theme,outrageous humor
+m/spaceballs,features the person,Schwartz
+m/hot_tub_time_machine,features the person,Steve Pink
+m/spaceballs,features the person,Moranis
+m/spaceballs,features the theme,the vacuum
+m/hot_tub_time_machine,features the theme,a huge laugh
+m/terminator,features the theme,living tissue
+m/hot_tub_time_machine,features the theme,tough going
+m/terminator,features the person,Incredible Hulk
+m/hot_tub_time_machine,features the theme,a dead-end job
+m/terminator,features the theme,film violence
+m/hot_tub_time_machine,features the theme,a groupie
+m/hot_tub_time_machine,features the theme,all the vulgarity
+m/terminator,features the theme,a tank truck
+m/terminator,features the theme,a photograph of her
+m/hot_tub_time_machine,features the miscellaneous theme,Machine
+m/terminator,features the theme,very little dialogue
+m/hot_tub_time_machine,features the miscellaneous theme,Choose Your Own Adventure
+m/spaceballs,features the person,Blazing Saddles
+m/spaceballs,features the theme,the best shot
+m/hot_tub_time_machine,features the person,Blaine
+m/hot_tub_time_machine,features the theme,investments
+m/spaceballs,features the miscellaneous theme,Winnebago
+m/hot_tub_time_machine,features the theme,your destiny
+m/hot_tub_time_machine,features the theme,some variety
+m/spaceballs,is,calculating
+m/spaceballs,features the theme,the hutt
+m/hot_tub_time_machine,features the theme,infrastructure
+m/spaceballs,features the theme,whose act
+m/hot_tub_time_machine,features the theme,a vortex
+m/dumb_and_dumber,features the theme,bikini girls
+m/hot_tub_time_machine,features the theme,a triple threat
+m/demolition_man,features the person,Cocteau
+m/hot_tub_time_machine,is,pub
+m/demolition_man,features the theme,big-budget action
+m/terminator,features the theme,cameron
+m/hot_tub_time_machine,is,tub
+m/hot_tub_time_machine,features the theme,the offset
+m/terminator,features the theme,his limited range
+m/demolition_man,features the theme,utopia
+m/hot_tub_time_machine,features the theme,the thin premise
+m/dumb_and_dumber,features the theme,etiquette
+m/demolition_man,features the theme,a very solid effort
+m/hot_tub_time_machine,features the theme,older viewers who grew
+m/demolition_man,features the theme,a sly sense of humour
+m/dumb_and_dumber,features the theme,the teaming
+m/hot_tub_time_machine,features the theme,a cracking soundtrack
+m/spaceballs,features the theme,a bumper sticker
+m/terminator,features the theme,the verge of victory
+m/demolition_man,features the theme,access codes
+m/demolition_man,features the theme,friendly
+m/hot_tub_time_machine,features the theme,the way things are
+m/hot_tub_time_machine,features the theme,the butterfly effect
+m/terminator,features the theme,a classic for the ages
+m/hot_tub_time_machine,features the theme,a chemical
+m/hot_tub_time_machine,features the theme,a casting error
+m/terminator,features the theme,the end of both movies
+m/demolition_man,features the theme,museum exhibits
+m/hot_tub_time_machine,features the theme,a certified star
+m/terminator,features the theme,audio tapes
+m/hot_tub_time_machine,features the theme,baby-boomers
+m/hot_tub_time_machine,features the theme,cool music
+m/hot_tub_time_machine,features the theme,the movie bops
+m/hot_tub_time_machine,features the theme,the movie %
+m/hot_tub_time_machine,features the theme,any sense of wit
+m/demolition_man,features the theme,some clever set-piece chases
+m/terminator,features the theme,a genre unto itself
+m/hot_tub_time_machine,features the theme,the mid-80
+m/demolition_man,features the theme,sense of irony
+m/spaceballs,features the theme,search of laughs
+m/hot_tub_time_machine,features the theme,a host of familiar faces
+m/demolition_man,features the theme,a resistance group
+m/hot_tub_time_machine,features the theme,such a thin premise
+m/dumb_and_dumber,features the theme,pedestrian slapstick
+m/hot_tub_time_machine,features the theme,a feature length comedy
+m/hot_tub_time_machine,features the theme,a screwball farce
+m/terminator,features the theme,an extraordinary swell of emotion
+m/terminator,features the theme,a pipe bomb
+m/demolition_man,features the theme,a parole hearing
+m/hot_tub_time_machine,features the theme,the repairman
+m/hot_tub_time_machine,features the theme,a game-winning touchdown
+m/hot_tub_time_machine,features the theme,a paper-thin premise
+m/dumb_and_dumber,features the theme,doody jokes
+m/hot_tub_time_machine,features the theme,spasms
+m/demolition_man,features the theme,spartan
+m/terminator,features the theme,pipe bombs
+m/dumb_and_dumber,features the theme,the jetway
+m/terminator,features the theme,a powerful screen presence
+m/hot_tub_time_machine,features the theme,this fantasy comedy
+m/hot_tub_time_machine,features the person,Steve Urkel
+m/spaceballs,features the organization,VHS
+m/dumb_and_dumber,features the theme,intentional misspellings
+m/spaceballs,features the organization,Space
+m/terminator,is,brooding
+m/demolition_man,features the person,Spartan
+m/spaceballs,features the person,Vespa
+m/hot_tub_time_machine,features the theme,this base
+m/hot_tub_time_machine,features the person,Adam Yates
+m/hot_tub_time_machine,features the miscellaneous theme,Jacuz
+m/demolition_man,is,evangelistic
+m/hot_tub_time_machine,features the miscellaneous theme,Hot Tub
+m/dumb_and_dumber,is,grammatical
+m/terminator,features the miscellaneous theme,inator
+m/dumb_and_dumber,features the miscellaneous theme,and Du
+m/dumb_and_dumber,features the person,Mary Swanson
+m/demolition_man,features the theme,his better ones
+m/terminator,features the theme,love with sarah
+m/hot_tub_time_machine,features the person,Lou Dorchen
+m/hot_tub_time_machine,features the theme,hot tub time machine
+m/hot_tub_time_machine,features the theme,this sloppy comedy
+m/dumb_and_dumber,features the person,Mike Starr
+m/hot_tub_time_machine,features the theme,your youth
+m/spaceballs,features the location,Vega
+m/hot_tub_time_machine,is,sloppiness
+m/terminator,features the theme,these nightmares
+m/spaceballs,features the theme,vega
+m/terminator,is,prayerful
+m/hot_tub_time_machine,features the person,Chev
+m/hot_tub_time_machine,features the theme,their younger selves
+m/hot_tub_time_machine,features the theme,their own memories
+m/terminator,features the theme,killer set-pieces
+m/dumb_and_dumber,features the theme,her briefcase
+m/hot_tub_time_machine,features the theme,just a feeling of indifference
+m/spaceballs,features the theme,spaceballs ii
+m/spaceballs,features the theme,spaceball to the moon
+m/hot_tub_time_machine,features the theme,slapstick punches
+m/demolition_man,features the theme,spandex to boot
+m/hot_tub_time_machine,features the theme,spaghetti-testing
+m/terminator,features the theme,still a toss-up between the terminator
+m/hot_tub_time_machine,features the theme,stick to the sex roll
+m/demolition_man,features the theme,spartan caught phoenix
+m/hot_tub_time_machine,features the theme,just a chance poke fun
+m/hot_tub_time_machine,features the theme,its slack editing
+m/spaceballs,features the theme,skroob
+m/spaceballs,features the theme,skroob schemes force king roland druidia
+m/dumb_and_dumber,features the theme,such a high level it transcends
+m/hot_tub_time_machine,features the theme,just a theory
+m/hot_tub_time_machine,features the theme,sheer ridiculousness as either an homage
+m/hot_tub_time_machine,features the theme,just a hint of sweetness
+m/hot_tub_time_machine,features the theme,stupid fun ensues involving crispin glover
+m/demolition_man,features the theme,subliminal rehabilitation techniques
+m/hot_tub_time_machine,features the theme,sight gags jokes baby boomer references
+m/spaceballs,features the theme,sidekick barf
+m/dumb_and_dumber,features the theme,some initial struggle
+m/dumb_and_dumber,features the theme,some gloves
+m/hot_tub_time_machine,features the theme,some laughs in this uneven but good-natured raunchfest
+m/hot_tub_time_machine,features the theme,some laugh-out-loud moments
+m/dumb_and_dumber,features the theme,some long periods between chuckles
+m/hot_tub_time_machine,features the theme,jacob's father
+m/hot_tub_time_machine,features the theme,its willfully idiotic title
+m/terminator,features the theme,its successor for pure freshness
+m/terminator,features the theme,someone's heart
+m/demolition_man,features the theme,slightly more imagination than the typical example
+m/hot_tub_time_machine,features the theme,some rude ' hangover'-style
+m/hot_tub_time_machine,features the theme,some sense of arrested development
+m/terminator,features the theme,"some relentless , unstoppable monster"
+m/hot_tub_time_machine,features the theme,some reasonable laughs
+m/hot_tub_time_machine,features the theme,smartly-tuned dialogue for horndog humor
+m/spaceballs,features the theme,its fresh air
+m/spaceballs,features the theme,the best conceits
+m/terminator,features the theme,the best narrative mind tricks of science fiction literature
+m/terminator,features the theme,the best picture of its kind since the road warrior
+m/demolition_man,features the theme,the best aspects of order
+m/terminator,features the theme,the birth of a genre
+m/hot_tub_time_machine,features the theme,the biggest question in a movie is hot tub time machine a full-on parody
+m/demolition_man,features the theme,the arrest of spartan for manslaughter
+m/hot_tub_time_machine,features the theme,the bastard punk offspring
+m/terminator,features the theme,its cyborg title character
+m/hot_tub_time_machine,features the theme,the central question it was
+m/dumb_and_dumber,features the theme,"the caviar of low-brow , gross-out comedy"
+m/hot_tub_time_machine,features the theme,the canonization of john hughes
+m/terminator,features the theme,the cartoony look of the war-ravaged future
+m/spaceballs,features the theme,the cardboard inversion of the cinematic machines
+m/dumb_and_dumber,features the theme,the charm of its dopey leads
+m/hot_tub_time_machine,features the theme,the charisma of the cast we turned
+m/terminator,features the theme,its concentrated visceral bursts unlike punctuation marks
+m/hot_tub_time_machine,features the theme,the chernobly
+m/dumb_and_dumber,features the theme,the chance be oil boys
+m/spaceballs,features the theme,the chagrin of its planet
+m/hot_tub_time_machine,features the theme,"the booze-soaked , forked-tongued storm"
+m/terminator,features the theme,the body-building actor scores
+m/hot_tub_time_machine,features the theme,the bottom-feeding cinema of the reagan era
+m/dumb_and_dumber,features the theme,its dopey leads
+m/dumb_and_dumber,features the theme,teaming of manic jim carrey
+m/hot_tub_time_machine,features the theme,its own awesome idiocy
+m/terminator,features the theme,tech%u2022noir
+m/hot_tub_time_machine,features the theme,tasteless humor nudity foul language
+m/hot_tub_time_machine,features the theme,that era's high-concept absurdism
+m/hot_tub_time_machine,features the theme,its occasionally sloppy script
+m/hot_tub_time_machine,features the theme,tepid juvenilia
+m/terminator,features the theme,"testosterone-fueled , estrogen-boosted action melodrama"
+m/terminator,features the theme,terrific momentum performances a compelling story
+m/spaceballs,features the theme,its planet of the apes-like population
+m/terminator,features the theme,super juice
+m/terminator,features the theme,its popular sequels
+m/demolition_man,features the theme,such small portions
+m/hot_tub_time_machine,features the theme,its own plots
+m/hot_tub_time_machine,features the theme,surprising personality
+m/demolition_man,features the theme,its last consequences
+m/spaceballs,features the theme,the action in star wars
+m/terminator,features the theme,the action formula
+m/hot_tub_time_machine,features the theme,its lead characters ' approach
+m/hot_tub_time_machine,features the theme,its inspired title
+m/spaceballs,features the theme,the apes-like population
+m/hot_tub_time_machine,features the theme,that ridiculous title
+m/demolition_man,features the theme,that old joke about a bad restaurant
+m/terminator,features the theme,that outrageous accent
+m/terminator,features the theme,its low-budget aesthetic and lo-fi energy
+m/dumb_and_dumber,features the theme,the ' limo'driver ' line
+m/hot_tub_time_machine,features the theme,the ' hangover of home-appliance time-travel comedies
+m/spaceballs,features the theme,once-great comic genius in decline
+m/hot_tub_time_machine,features the theme,one believable character
+m/hot_tub_time_machine,features the theme,maximum bro-fficiency
+m/dumb_and_dumber,features the theme,oil boys for a group
+m/dumb_and_dumber,features the theme,mary at the hotel bar
+m/spaceballs,features the theme,only enough money cover his expenses
+m/hot_tub_time_machine,features the theme,only a few stick
+m/demolition_man,features the theme,not your brain cells
+m/hot_tub_time_machine,features the theme,not enough sweetness
+m/demolition_man,features the theme,obnoxious dialogue acting product placement
+m/hot_tub_time_machine,features the theme,obnoxious men-children
+m/hot_tub_time_machine,features the theme,numerous promo screenings
+m/hot_tub_time_machine,features the theme,nutso travel mode
+m/hot_tub_time_machine,features the theme,oversized cell phones
+m/hot_tub_time_machine,features the theme,over-the-top language sabotage
+m/hot_tub_time_machine,features the theme,over-heated alternative universe
+m/hot_tub_time_machine,features the theme,past simplicity
+m/demolition_man,features the theme,part of phoenix's rehab
+m/spaceballs,features the theme,major debt with the gangster pizza
+m/hot_tub_time_machine,features the theme,many strange occurrences fashion music videos
+m/demolition_man,features the theme,other criminals
+m/terminator,features the theme,our pop culture radar screens
+m/terminator,features the theme,many police officers
+m/demolition_man,features the theme,others on the police force
+m/demolition_man,features the theme,more convicts
+m/hot_tub_time_machine,features the theme,music videos on mtv and michael jackson
+m/hot_tub_time_machine,features the theme,my brick cell phone
+m/hot_tub_time_machine,features the theme,my enjoyment of the picture
+m/hot_tub_time_machine,features the theme,moments of genuine warmth
+m/hot_tub_time_machine,features the theme,narrative underpinning
+m/hot_tub_time_machine,features the theme,način
+m/hot_tub_time_machine,features the theme,near-complete lack of inhibition
+m/spaceballs,features the theme,more proof that filmmaker mel brooks misplaced his sense
+m/terminator,features the theme,more than enough violence arnold's a whizz
+m/hot_tub_time_machine,features the theme,most guy-centric films
+m/terminator,features the theme,most film reviewers
+m/demolition_man,features the theme,murders warden several guards
+m/hot_tub_time_machine,features the theme,middling execution
+m/hot_tub_time_machine,features the theme,middle-aged anomie with rowdy affection
+m/hot_tub_time_machine,features the theme,middle-age angst
+m/hot_tub_time_machine,features the theme,no more roar
+m/hot_tub_time_machine,features the theme,no real sparks of genius some reasonable laughs
+m/hot_tub_time_machine,features the theme,none of this sloppiness matters the movie is of course it is
+m/dumb_and_dumber,features the theme,no-hopers
+m/demolition_man,features the theme,no-brainers
+m/demolition_man,features the theme,no trace of the hostages
+m/dumb_and_dumber,features the theme,nitwits traveling cross-country
+m/hot_tub_time_machine,features the theme,no justifiable reason it succeed
+m/hot_tub_time_machine,features the theme,misses in the oral sex department
+m/spaceballs,features the theme,no consiga recapturar
+m/demolition_man,features the theme,minority-group members
+m/hot_tub_time_machine,features the theme,no doubt it's an effective nostalgic trip
+m/dumb_and_dumber,features the theme,misadventure
+m/hot_tub_time_machine,features the theme,ridiculous in-jokes coalesce ( if simple-minded ) comedy
+m/demolition_man,features the theme,lapd sgt
+m/hot_tub_time_machine,features the theme,ridiculous setup
+m/hot_tub_time_machine,features the theme,retro fun plotting outrageous humor
+m/hot_tub_time_machine,features the theme,revisits
+m/hot_tub_time_machine,features the theme,laid-back music journalist
+m/hot_tub_time_machine,features the theme,rowdy affection
+m/dumb_and_dumber,features the theme,rude junior high school pranks
+m/hot_tub_time_machine,features the theme,raucous hilarity
+m/hot_tub_time_machine,features the theme,just some magic gunk
+m/hot_tub_time_machine,features the theme,sheer energetic self-belief
+m/terminator,features the theme,sharp detail
+m/dumb_and_dumber,features the theme,sexual jibes
+m/terminator,features the theme,just another passing blip
+m/spaceballs,features the theme,king roland of the neighboring planet
+m/hot_tub_time_machine,features the theme,kind of the conclusion of their trilogy
+m/hot_tub_time_machine,features the theme,just too bad pink
+m/hot_tub_time_machine,features the theme,just whatever-dude laziness
+m/hot_tub_time_machine,features the theme,self-conscious cinematic nostalgia to middle-aged anomie
+m/hot_tub_time_machine,features the theme,self-created misery
+m/terminator,features the theme,sci-fi concepts
+m/demolition_man,features the theme,sci-fi adventure romance
+m/terminator,features the theme,science fiction literature
+m/demolition_man,features the theme,plenty of eye candy at work satisfy action fans
+m/spaceballs,features the theme,planet spaceball
+m/hot_tub_time_machine,features the theme,popular movies
+m/hot_tub_time_machine,features the theme,porky's revenge
+m/hot_tub_time_machine,features the theme,pointlessly crude moments
+m/hot_tub_time_machine,features the theme,"politically-incorrect , r-rated guffaws"
+m/hot_tub_time_machine,features the theme,perfectly vulgar fun
+m/dumb_and_dumber,features the theme,peerless enthusiasm
+m/hot_tub_time_machine,features the theme,pink's derivative vision
+m/hot_tub_time_machine,features the theme,lowbrow humour
+m/dumb_and_dumber,features the theme,"low-brow , gross-out comedy"
+m/hot_tub_time_machine,features the theme,pervasive social media
+m/hot_tub_time_machine,features the theme,"likeable , well acted and frequently funny comedy script an over-reliance"
+m/dumb_and_dumber,features the theme,pursuit of the briefcase
+m/spaceballs,features the theme,pure enjoyment of movies
+m/terminator,features the theme,pure freshness
+m/spaceballs,features the theme,lightsaber-like  schwartz rings near the ship's self-destruct button
+m/dumb_and_dumber,features the theme,literal-minded doofdom
+m/terminator,features the theme,pulp art
+m/dumb_and_dumber,features the theme,punch-line dispensers
+m/terminator,features the theme,punctuation marks
+m/dumb_and_dumber,features the theme,rat poison pills he planned
+m/hot_tub_time_machine,features the theme,life in those acid-wash jeans
+m/demolition_man,features the theme,predicts with the help
+m/hot_tub_time_machine,features the theme,potentially silly concept
+m/hot_tub_time_machine,features the theme,post-pub perfection
+m/hot_tub_time_machine,features the theme,proof is truth
+m/spaceballs,features the theme,the vacuum bag
+m/hot_tub_time_machine,features the theme,the very clever and amusing finish
+m/hot_tub_time_machine,features the theme,the very silly anchorman
+m/spaceballs,features the theme,the vaudeville comedian whose act consists
+m/terminator,features the theme,the very best science-fiction contemporaries
+m/terminator,features the theme,the war-ravaged future
+m/demolition_man,features the theme,the way last action hero tried
+m/spaceballs,features the theme,the villainous dark helmet
+m/demolition_man,features the theme,the view of utopia
+m/terminator,features the theme,the visceral violence of the best action movies
+m/hot_tub_time_machine,features the theme,the titular device
+m/spaceballs,features the theme,the thumpingly obvious outweighs
+m/hot_tub_time_machine,features the theme,the timing of a borscht belt
+m/hot_tub_time_machine,features the theme,the time-travel gags
+m/demolition_man,features the theme,the typical example of the slash-and-burn genre
+m/spaceballs,features the theme,their giddy orbits
+m/hot_tub_time_machine,features the theme,their hotel room's hot tub
+m/demolition_man,features the theme,their incarceration
+m/hot_tub_time_machine,features the theme,their reflections
+m/hot_tub_time_machine,features the theme,their trilogy of films
+m/hot_tub_time_machine,features the theme,their time travel
+m/hot_tub_time_machine,features the theme,their own cruelty
+m/hot_tub_time_machine,features the theme,their own world of self-created misery
+m/hot_tub_time_machine,features the theme,the wit of the writers
+m/dumb_and_dumber,features the theme,the wholeheartedness of this descent into crude and rude humor
+m/hot_tub_time_machine,features the theme,the wonky jacuzzi gives the film its title
+m/hot_tub_time_machine,features the theme,the way with projectile vomiting
+m/terminator,features the theme,the-'80s
+m/dumb_and_dumber,features the theme,their  break
+m/terminator,features the theme,the world's spotlight
+m/hot_tub_time_machine,features the theme,the sex drugs rock
+m/demolition_man,features the theme,the science fiction of the nineties
+m/spaceballs,features the theme,the sci-fi stuff he spoofing helps the laughs
+m/spaceballs,features the theme,the search for more money
+m/demolition_man,features the theme,the security systems
+m/demolition_man,features the theme,the script's often sharp social satire
+m/spaceballs,features the theme,the silliest aspects of all the major space adventures
+m/demolition_man,features the theme,the slash-and-burn genre
+m/dumb_and_dumber,features the theme,the slightest clue about comic timing
+m/terminator,features the theme,the size of a bull's flank
+m/hot_tub_time_machine,features the theme,the sheer number of the pitches
+m/spaceballs,features the theme,the shield protects druidia
+m/spaceballs,features the theme,the shark with spaceballs
+m/spaceballs,features the theme,the ship's self-destruct button
+m/dumb_and_dumber,features the theme,the road to colorado
+m/spaceballs,features the theme,the robot's head
+m/hot_tub_time_machine,features the theme,the ridiculous clothes for others
+m/terminator,features the theme,the same photograph john give
+m/terminator,features the theme,the telephone directory
+m/hot_tub_time_machine,features the theme,the tables on adam
+m/hot_tub_time_machine,features the theme,the sort of film cusack caught
+m/spaceballs,features the theme,the spaceballs prison complex
+m/spaceballs,features the theme,the spaceball one ship
+m/dumb_and_dumber,features the theme,the social comedy of jerry lewis
+m/dumb_and_dumber,features the theme,the social pipeline
+m/demolition_man,features the theme,the status of andrew dice clay
+m/spaceballs,features the theme,the star wars adventures
+m/hot_tub_time_machine,features the theme,"the standout in this f-bomb-laced , sex-fueled , 80s-time-warp comic misadventure"
+m/terminator,features the theme,virtuoso moviemaking momentum solid performances
+m/hot_tub_time_machine,features the theme,wanton sex
+m/hot_tub_time_machine,features the theme,vrijeme
+m/hot_tub_time_machine,features the theme,vremena na vrijeme
+m/terminator,features the theme,whose addresses
+m/hot_tub_time_machine,features the theme,what transpires during the course
+m/demolition_man,features the theme,virtually all the psychopathically murderous criminals as minority-group members
+m/hot_tub_time_machine,features the theme,urination nudity gay panic jokes
+m/hot_tub_time_machine,is,absurdest
+m/hot_tub_time_machine,is,cusackian
+m/spaceballs,is,brooks
+m/hot_tub_time_machine,is,chlorinated
+m/hot_tub_time_machine,is,nam
+m/terminator,features the theme,women named sarah connor
+m/hot_tub_time_machine,features the theme,wit in its humour
+m/terminator,features the theme,wittily
+m/demolition_man,features the theme,your opinion of stallone
+m/hot_tub_time_machine,features the theme,zna
+m/hot_tub_time_machine,features the theme,your-popcorn
+m/spaceballs,features the theme,yogurt
+m/hot_tub_time_machine,features the theme,yet another tale of obnoxious men-children
+m/hot_tub_time_machine,features the theme,your heaping helpings of 80s nostalgia
+m/demolition_man,features the theme,this futuristic comedy
+m/dumb_and_dumber,features the theme,this gleefully lowbrow film
+m/hot_tub_time_machine,features the theme,this hilarious comedy
+m/hot_tub_time_machine,features the theme,this hilarious and unapologetically adult buddy chuckler
+m/hot_tub_time_machine,features the theme,this guys among guys
+m/terminator,features the theme,this propulsively exciting yarn about a murderous cyborg
+m/spaceballs,features the theme,this sendup by director mel brooks
+m/terminator,features the theme,this rip-roaring action adventure
+m/hot_tub_time_machine,features the theme,this particular hot tub fly
+m/hot_tub_time_machine,features the theme,this absolutely hilarious comedy has a great joke
+m/hot_tub_time_machine,features the theme,their younger bodies
+m/dumb_and_dumber,features the theme,these laughs
+m/hot_tub_time_machine,features the theme,these children of the 80s
+m/dumb_and_dumber,features the theme,this dopey comedy on a road trip
+m/dumb_and_dumber,features the theme,this descent
+m/dumb_and_dumber,features the theme,this fantasy of anti-social behaviour
+m/demolition_man,features the theme,"this fast , funny and violent futuristic action film"
+m/hot_tub_time_machine,features the theme,this film criticism of hot tub time machine
+m/hot_tub_time_machine,features the theme,too much slapdash raunchiness not enough sweetness
+m/hot_tub_time_machine,features the theme,tired time travel clichs shtick lazy comedy
+m/spaceballs,features the theme,to  ludicrous speed
+m/hot_tub_time_machine,features the theme,title promise
+m/hot_tub_time_machine,features the theme,"time we put those p***ified , lame pg-13 teen comedies"
+m/hot_tub_time_machine,features the theme,time-travelling farces
+m/hot_tub_time_machine,features the theme,time-twisting comedy classics
+m/hot_tub_time_machine,features the theme,time travel plunges
+m/hot_tub_time_machine,features the theme,time travel and midlife crisis movies
+m/hot_tub_time_machine,features the theme,together of sentimental soul-searching and gross out humor
+m/hot_tub_time_machine,features the theme,u2013 his name
+m/hot_tub_time_machine,features the theme,this tub
+m/dumb_and_dumber,features the theme,this virtually laughless movie
+m/hot_tub_time_machine,features the theme,this uneven but good-natured raunchfest
+m/hot_tub_time_machine,features the theme,this sloppiness matters
+m/terminator,features the theme,time kill sarah
+m/hot_tub_time_machine,features the theme,those acid-wash jeans
+m/terminator,features the theme,those cracked reflections of reality
+m/terminator,features the theme,those nightmares we had
+m/hot_tub_time_machine,features the theme,"those p***ified , lame pg-13 teen comedies"
+m/hot_tub_time_machine,features the theme,those frat-party cocktails they dump
+m/hot_tub_time_machine,features the theme,those leg-warmers
+m/hot_tub_time_machine,features the theme,the funniest thing about hot tub time machine
+m/dumb_and_dumber,features the theme,the funniest movie in the world
+m/spaceballs,features the theme,the gangster pizza
+m/spaceballs,features the theme,the gangster's untimely death
+m/demolition_man,features the theme,the future he finds
+m/terminator,features the theme,the future guv of california
+m/terminator,features the theme,the formation of the resistance
+m/terminator,features the theme,the frights of these nightmares
+m/hot_tub_time_machine,features the theme,the genre's low expectations
+m/demolition_man,features the theme,the film last action hero wanted
+m/terminator,features the theme,the film put james cameron
+m/spaceballs,features the theme,the film's low-tech styling
+m/spaceballs,features the theme,the few screwball comedies everyone experience
+m/hot_tub_time_machine,features the theme,the first word of high concept
+m/spaceballs,features the theme,the film's merchandising campaign
+m/hot_tub_time_machine,features the theme,the film's time
+m/hot_tub_time_machine,features the theme,the impression of a halfhearted effort
+m/hot_tub_time_machine,features the theme,the hot tub they create a vortex
+m/hot_tub_time_machine,features the theme,the hot tub repair man
+m/dumb_and_dumber,features the theme,the items they bought
+m/spaceballs,features the theme,the jokes about the more calculating aspects
+m/terminator,features the theme,the ingeniousness of the terminator
+m/hot_tub_time_machine,features the theme,the inescapable fact it is
+m/hot_tub_time_machine,features the theme,the hangover ' lite
+m/hot_tub_time_machine,features the theme,the guys ' chemistry
+m/terminator,features the theme,the heart of every movie addict
+m/hot_tub_time_machine,features the theme,the gross-out-comedy equivalent of spaghetti-testing
+m/dumb_and_dumber,features the theme,the gulf between etiquette
+m/hot_tub_time_machine,features the theme,the grown-men-gone-wild hangover style
+m/demolition_man,features the theme,the help of a computer algorithm
+m/hot_tub_time_machine,features the theme,the high concept mess
+m/demolition_man,features the theme,the cryogenic chemical
+m/demolition_man,features the theme,the cryo-prison
+m/hot_tub_time_machine,features the theme,the crude humor over-the-top language sabotage what been a very funny movie
+m/hot_tub_time_machine,features the theme,the course of 100 beautifully deranged minutes
+m/hot_tub_time_machine,features the theme,the crappy gay jokes
+m/terminator,features the theme,the dark shadow of doom
+m/dumb_and_dumber,features the theme,the desire be a child
+m/dumb_and_dumber,features the theme,the days of john belushi
+m/hot_tub_time_machine,features the theme,the days of  miami vice
+m/hot_tub_time_machine,features the theme,the deathly serious funny people childish men forced
+m/hot_tub_time_machine,features the theme,the comedies of the decade
+m/spaceballs,features the theme,the cinematic machines it parodies
+m/demolition_man,features the theme,the cities of los angeles
+m/hot_tub_time_machine,features the theme,the constant silliness
+m/demolition_man,features the theme,the corpses of the hostages
+m/terminator,features the theme,the convention of a soulless gun
+m/dumb_and_dumber,features the theme,the complementary screen
+m/spaceballs,features the theme,the events in alien
+m/demolition_man,features the theme,the exchange on security cameras
+m/demolition_man,features the theme,the exchange of bodily fluids
+m/terminator,features the theme,the extraordinary physical specimen of arnold schwarzenegger
+m/demolition_man,features the theme,the facility in the process
+m/terminator,features the theme,the dubious everyone the musclebound fellow be
+m/dumb_and_dumber,features the theme,the dumbest guys in the universe
+m/hot_tub_time_machine,features the theme,the dumbest premise for a time-travel movie
+m/hot_tub_time_machine,features the theme,the pace crackling
+m/terminator,features the theme,the original and best film from the franchise
+m/hot_tub_time_machine,features the theme,the outrageous performance of rob corrdry
+m/hot_tub_time_machine,features the theme,the pitches
+m/dumb_and_dumber,features the theme,the passing of gas
+m/dumb_and_dumber,features the theme,the percentage of them
+m/hot_tub_time_machine,features the theme,the number of chuckles
+m/terminator,features the theme,the notion the terminator move
+m/hot_tub_time_machine,features the theme,the obligatory raunch
+m/hot_tub_time_machine,features the theme,the only misstep
+m/hot_tub_time_machine,features the theme,the oral sex department
+m/spaceballs,features the theme,the opening shot of a giant ominous spaceship
+m/spaceballs,features the theme,the opening shot in star wars
+m/dumb_and_dumber,features the theme,the puns to the slapstick to the toilet
+m/demolition_man,features the theme,the pseudo-pacifist guidance of the evangelistic dr. raymond cocteau
+m/hot_tub_time_machine,features the theme,the resort he vomited
+m/terminator,features the theme,the resistance on the verge
+m/hot_tub_time_machine,features the theme,the really funny thing
+m/terminator,features the theme,the realm of the surreal
+m/hot_tub_time_machine,features the theme,the power make a movie
+m/demolition_man,features the theme,the pleasant surprise about demolition man
+m/spaceballs,features the theme,the planet in her mercedes spaceship with her droid
+m/hot_tub_time_machine,features the theme,the price of admission worthwhile
+m/demolition_man,features the theme,the loss of cocteau
+m/terminator,features the theme,the low-budget original
+m/demolition_man,features the theme,the lifestyles of the late 20th century
+m/hot_tub_time_machine,features the theme,"the many "" teen party "" movies"
+m/hot_tub_time_machine,features the theme,the many absurdities of the mid-80
+m/dumb_and_dumber,features the theme,the mastermind behind bobby's kidnapping
+m/terminator,features the theme,the major hits of the pre-christmas season
+m/hot_tub_time_machine,features the theme,the key to their time travel
+m/spaceballs,features the theme,the jokes in the films
+m/hot_tub_time_machine,features the theme,"the kind of crummy-looking , exploitative , childishly gross and pointedly homophobic teen-sex comedy"
+m/hot_tub_time_machine,features the theme,the kind of film holds laughs
+m/demolition_man,features the theme,the leader of a resistance group
+m/hot_tub_time_machine,features the theme,the level of genuine wit
+m/hot_tub_time_machine,features the theme,the level of hatred
+m/spaceballs,features the theme,the last great film
+m/hot_tub_time_machine,features the theme,the last time he making popular movies
+m/hot_tub_time_machine,features the theme,the movie's devolution
+m/terminator,features the theme,the most memorable and brilliant villains
+m/spaceballs,features the theme,the narcoleptic prince valium
+m/hot_tub_time_machine,features the theme,the naff-sounding name been a throwaway offering
+m/spaceballs,features the theme,the neighboring planet
+m/spaceballs,features the theme,the nearby  desert moon of vega
+m/hot_tub_time_machine,features the theme,the movie's the problem
+m/terminator,features the theme,the movie's scares
+m/terminator,features the theme,the musclebound fellow with that outrageous accent
+m/terminator,features the theme,the megabudget sequels
+m/terminator,features the theme,the most effective science fiction films of recent decades
+m/terminator,features the theme,the most harrowing science fiction films in james cameron's repertoire
+m/spaceballs,features the theme,the more calculating aspects of george lucas's franchise
+m/hot_tub_time_machine,features the theme,the more fun comedies sees grown men
+m/terminator,features the theme,the monster's role
+m/hot_tub_time_machine,features the theme,"the most attention-getting , stupid / brilliant high-concept title since snakes on a plane"
+m/terminator,features the theme,the most absurd excursion
+m/terminator,features the theme,a human soldier
+m/terminator,features the theme,a hydraulic press
+m/hot_tub_time_machine,features the theme,"a joyously r-rated , surprisingly insightful yet uncontrollably outrageous film"
+m/hot_tub_time_machine,features the theme,a hot tub of tepid juvenilia
+m/dumb_and_dumber,features the theme,a hotel suite clothes a lamborghini diablo
+m/spaceballs,features the theme,a large distance
+m/hot_tub_time_machine,features the theme,a large amount of the film's time
+m/demolition_man,features the theme,a layer of comedy replete with hollywood in-jokes
+m/terminator,features the theme,a lean efficiency both he abandoned
+m/terminator,features the theme,a kind of b-grade action cinema
+m/hot_tub_time_machine,features the theme,a killer pitch
+m/terminator,features the theme,a keen understanding of the sci-fi genre
+m/hot_tub_time_machine,features the theme,a kinky cross of caligula
+m/hot_tub_time_machine,features the theme,a halfhearted effort
+m/hot_tub_time_machine,features the theme,a handful of good one-liners
+m/hot_tub_time_machine,features the theme,a happy and caring wife
+m/dumb_and_dumber,features the theme,a gross-out classic
+m/dumb_and_dumber,features the theme,a group of bikini girls harry tells lloyd
+m/spaceballs,features the theme,a group of diminutive sparkly brown-clad aliens
+m/terminator,features the theme,"a high-octane , tech-noir adventure"
+m/terminator,features the theme,a high-potency distillation of a bunch into one package
+m/spaceballs,features the theme,a hit on broadway
+m/spaceballs,features the theme,a hilarious combination of its parts
+m/hot_tub_time_machine,features the theme,a henpecked husband with a dead-end job
+m/hot_tub_time_machine,features the theme,a luxurious lifestyle with kelly
+m/spaceballs,features the theme,a lunch break at a diner
+m/spaceballs,features the theme,a lucrative reward retrieve vespa
+m/hot_tub_time_machine,features the theme,a merrily idiotic movie
+m/spaceballs,features the theme,a metaphysical power
+m/hot_tub_time_machine,features the theme,a level of charm
+m/dumb_and_dumber,features the theme,a lot of these laughs
+m/dumb_and_dumber,features the theme,a long way from the social comedy
+m/hot_tub_time_machine,features the theme,a film contains some big laughs
+m/hot_tub_time_machine,features the theme,a fair amount of genuine retro fun
+m/terminator,features the theme,a fantastic blend of horror
+m/terminator,features the theme,a factory kyle activates machinery
+m/hot_tub_time_machine,features the theme,a gen next tag
+m/hot_tub_time_machine,features the theme,a generational gap turned me
+m/spaceballs,features the theme,a giant ominous spaceship
+m/terminator,features the theme,a genuine steel metal trap of a movie
+m/demolition_man,features the theme,a great double-act
+m/hot_tub_time_machine,features the theme,a great joke
+m/spaceballs,features the theme,a forced quality
+m/spaceballs,features the theme,a final message from yogurt informing him
+m/hot_tub_time_machine,features the theme,a fundamentally lazy comedy
+m/hot_tub_time_machine,features the theme,"a fun , fast , fearless comedy"
+m/hot_tub_time_machine,features the theme,a fun ride bring memories
+m/spaceballs,features the theme,a funny enough movie
+m/terminator,features the theme,a futuristic machine
+m/demolition_man,features the theme,a futuristic cop picture with slightly more imagination
+m/hot_tub_time_machine,features the theme,a frat house ' cocktail
+m/dumb_and_dumber,features the theme,a frayed string of gags
+m/dumb_and_dumber,features the theme,a friendly game of tag
+m/terminator,features the theme,a rough-edged feel
+m/hot_tub_time_machine,features the theme,a retro twist
+m/hot_tub_time_machine,features the theme,a reverent
+m/dumb_and_dumber,features the theme,a road trip to misadventure
+m/demolition_man,features the theme,a screen-filling image of the hollywood sign
+m/terminator,features the theme,a sci-fi collection
+m/terminator,features the theme,a sci-fi actioner
+m/hot_tub_time_machine,features the theme,a sad disappointment
+m/spaceballs,features the theme,a sage named yogurt who is
+m/hot_tub_time_machine,features the theme,a really goofy and fun piece of work
+m/demolition_man,features the theme,a real pod movie
+m/hot_tub_time_machine,features the theme,a quirky premise
+m/demolition_man,features the theme,a rarity in the science fiction
+m/spaceballs,features the theme,a rampant direction
+m/terminator,features the theme,a resistance movement against skynet
+m/terminator,features the theme,a small place in the heart
+m/hot_tub_time_machine,features the theme,a ski patrol
+m/hot_tub_time_machine,features the theme,"a slapdash , gross-out good time you 're"
+m/hot_tub_time_machine,features the theme,a soundtrack of cool music
+m/terminator,features the theme,a soulless gun for hire
+m/spaceballs,features the theme,a soulless montage
+m/terminator,features the theme,a souvenir of a kind
+m/demolition_man,features the theme,a society combines the best aspects
+m/spaceballs,features the theme,a sense of pure enjoyment
+m/demolition_man,features the theme,a series of explosives bring the building
+m/demolition_man,features the theme,a significant artifact of our time
+m/demolition_man,features the theme,a single metropolis under the name
+m/dumb_and_dumber,features the theme,a short scuffle over some gloves
+m/terminator,features the theme,"a nerve-bludgeoning , relentlessly exciting action movie masterpiece"
+m/hot_tub_time_machine,features the theme,a mullet in the new millennium
+m/terminator,features the theme,a murderous cyborg
+m/demolition_man,features the theme,a number of hostages
+m/terminator,features the theme,a nice eye for sharp detail
+m/demolition_man,features the theme,"a noisy , soulless , self-conscious pastiche mixes elements"
+m/hot_tub_time_machine,features the theme,a night of disorderly drinking
+m/hot_tub_time_machine,features the theme,a more exciting and more humorous time-travelling movie from another era
+m/spaceballs,features the theme,a misguided parody of the star wars adventures
+m/dumb_and_dumber,features the theme,a minibike
+m/hot_tub_time_machine,features the theme,a mindless minor masterpiece
+m/dumb_and_dumber,features the theme,a modern classic of the comedy genre
+m/hot_tub_time_machine,features the theme,a movie is kind of a shame the title is
+m/hot_tub_time_machine,features the theme,a movie with good self-awareness
+m/hot_tub_time_machine,features the theme,a movie whose sole purpose is
+m/terminator,features the theme,a motel they assemble pipe bombs
+m/hot_tub_time_machine,features the theme,a movie called  hot tub time machine
+m/hot_tub_time_machine,features the theme,a movie called hot tub time machine
+m/terminator,features the theme,a movie be the best picture
+m/terminator,features the theme,a powerful flow
+m/terminator,features the theme,a powerful metal endoskeleton
+m/hot_tub_time_machine,features the theme,a potentially wry comedy about time travel plunges into a hot tub
+m/hot_tub_time_machine,features the theme,a poor performance with his band
+m/hot_tub_time_machine,features the theme,a popcorn pop-culture snack
+m/hot_tub_time_machine,features the theme,a pretty dumb-and very funny-comedy
+m/terminator,features the theme,"a proactive , inventive filmmaker"
+m/hot_tub_time_machine,features the theme,"a perfect collision of high-energy and high-concept , hot tub benefits from near-complete lack"
+m/hot_tub_time_machine,features the theme,a party animal in his 40s
+m/hot_tub_time_machine,features the theme,a platform for retro fun
+m/dumb_and_dumber,features the theme,a plethora of memorable scenes
+m/spaceballs,features the theme,a pg-rated comedy
+m/hot_tub_time_machine,features the theme,a piece of good-times stupidness
+m/spaceballs,features the person,Dark Helmet
+m/spaceballs,features the person,Dinks
+m/spaceballs,features the person,Dot Matrix
+m/hot_tub_time_machine,features the person,Collette Wolfe
+m/dumb_and_dumber,features the organization,and Dumber
+m/spaceballs,features the organization,rch
+m/hot_tub_time_machine,features the person,. Cusack
+m/hot_tub_time_machine,features the person,( Rob ) Corddry
+m/spaceballs,features the person,Barf
+m/spaceballs,features the person,Lone Starr
+m/demolition_man,features the person,Lenina Huxley
+m/hot_tub_time_machine,features the person,Nick Webber-Agnew
+m/dumb_and_dumber,features the person,Mental
+m/dumb_and_dumber,features the person,Mentalino
+m/hot_tub_time_machine,features the person,Hot Tub
+m/dumb_and_dumber,features the person,J . P . Shay
+m/spaceballs,features the person,Helmet
+m/dumb_and_dumber,features the person,Karen Duffy
+m/spaceballs,features the person,King Roland
+m/demolition_man,features the person,John Spartan
+m/dumb_and_dumber,features the person,Joe  Mental
+m/demolition_man,features the miscellaneous theme,Great Earthquake
+m/hot_tub_time_machine,features the miscellaneous theme,Hard-R
+m/hot_tub_time_machine,features the miscellaneous theme,Daily Show
+m/demolition_man,features the miscellaneous theme,Demolition Man
+m/spaceballs,features the miscellaneous theme,Eagle 5
+m/hot_tub_time_machine,features the location,Kodiak Valley Ski Resort
+m/dumb_and_dumber,features the location,Providence
+m/demolition_man,features the location,San Angeles
+m/demolition_man,features the location,California Cryo-Penitentiary
+m/hot_tub_time_machine,features the location,Jheri
+m/spaceballs,features the location,Druidia
+m/hot_tub_time_machine,features the miscellaneous theme,"Back to the Future , Hot Tub Time Machine"
+m/hot_tub_time_machine,features the miscellaneous theme,Back to the Future !
+m/dumb_and_dumber,features the miscellaneous theme,Aspen
+m/hot_tub_time_machine,features the miscellaneous theme,Bartles & Jaymes
+m/hot_tub_time_machine,features the miscellaneous theme,Capac
+m/hot_tub_time_machine,features the miscellaneous theme,Chernobly
+m/spaceballs,features the location,Vespa
+m/demolition_man,features the location,Utopia
+m/hot_tub_time_machine,features the miscellaneous theme,Alf
+m/hot_tub_time_machine,features the organization,Gen Next
+m/hot_tub_time_machine,features the organization,Kid ' n Play
+m/hot_tub_time_machine,features the organization,John Cusack & Co .
+m/hot_tub_time_machine,features the organization,Hooter's
+m/hot_tub_time_machine,features the organization,Hot Tub Time Machine
+m/hot_tub_time_machine,features the organization,Hot Tub Machine
+m/hot_tub_time_machine,features the organization,Hot Tub
+m/dumb_and_dumber,features the organization,Dbi & Lide
+m/spaceballs,features the organization,Spaceball
+m/terminator,features the organization,Terminator
+m/hot_tub_time_machine,features the organization,Pink
+m/hot_tub_time_machine,features the miscellaneous theme,Private School
+m/hot_tub_time_machine,features the miscellaneous theme,Porky's Revenge
+m/spaceballs,features the miscellaneous theme,Spaceballs II : The Search for More Money
+m/hot_tub_time_machine,features the miscellaneous theme,goes
+m/demolition_man,features the miscellaneous theme,lition Man
+m/hot_tub_time_machine,features the miscellaneous theme,cki
+m/hot_tub_time_machine,features the miscellaneous theme,Tucker Max to the Future
+m/spaceballs,features the miscellaneous theme,The Schwartz
+m/hot_tub_time_machine,features the theme,a carefully calibrated mix of sight gags
+m/hot_tub_time_machine,features the theme,a certain brand of 80s comedy schlock
+m/hot_tub_time_machine,features the theme,a classically stupid-funny teen comedy with a retro twist
+m/dumb_and_dumber,features the theme,a chip-toothed limousine driver
+m/dumb_and_dumber,features the theme,a child whooping it
+m/terminator,features the theme,"a blazing , cinematic comic book"
+m/hot_tub_time_machine,features the theme,a bizarre blend
+m/terminator,features the theme,a bunch of sci-fi concepts
+m/demolition_man,features the theme,a car chase between spartan
+m/terminator,features the theme,a brilliant sci-fi film
+m/hot_tub_time_machine,features the theme,a bubbling bath
+m/terminator,features the theme,a bull's flank
+m/hot_tub_time_machine,features the theme,a bro-down
+m/dumb_and_dumber,features the theme,a broken toilet at mary's house
+m/hot_tub_time_machine,features the theme,a crowd-pleasing ode to the days
+m/demolition_man,features the theme,a crime syndicate spartan finds
+m/terminator,features the theme,"a cyberpunk picture testosterone-fueled , estrogen-boosted action melodrama"
+m/terminator,features the theme,a cyborg assassin
+m/hot_tub_time_machine,features the theme,a cute and silly romp
+m/hot_tub_time_machine,features the theme,a cryptic hot tub repairman
+m/hot_tub_time_machine,features the theme,a decent fist
+m/terminator,features the theme,a compellingly told story requires him
+m/demolition_man,features the theme,a computer algorithm
+m/demolition_man,features the theme,a command prevents phoenix
+m/hot_tub_time_machine,features the theme,a comedy with genuine laughs
+m/hot_tub_time_machine,features the theme,a couple of bartles
+m/hot_tub_time_machine,features the theme,a consistently funny package
+m/spaceballs,features the person,Valium
+m/hot_tub_time_machine,features the theme,( a necessary salute
+m/spaceballs,features the person,Young Frankenstein
+m/spaceballs,features the person,Yogurt
+m/demolition_man,features the person,Raymond Cocteau
+m/hot_tub_time_machine,features the person,Rob Corrdry
+m/spaceballs,features the person,Pizza the Hutt
+m/spaceballs,features the person,Skroob
+m/terminator,features the person,Silberman
+m/demolition_man,features the person,Simon Phoenix
+m/spaceballs,features the person,Sandurz
+m/demolition_man,features the theme,a bad ride
+m/demolition_man,features the theme,a bad restaurant
+m/hot_tub_time_machine,features the theme,a  preview version
+m/spaceballs,features the theme,a algumas belas sacadas
+m/hot_tub_time_machine,features the theme,a big fat raspberry at sci-fi fans
+m/terminator,features the theme,a better-crafted film than its popular sequels
+m/demolition_man,features the theme,--a considerable amount by any measure
+m/terminator,features the theme,", non sequitur pace of a nightmare"
+m/hot_tub_time_machine,features the theme,.. just about everything its title suggests
+m/hot_tub_time_machine,features the theme,( if simple-minded ) comedy
+m/demolition_man,features the theme,", acts"
+m/hot_tub_time_machine,features the theme,... slob farces
+m/terminator,features the theme,[ an ] excellent piece of science fiction cinema
+m/dumb_and_dumber,features the theme,[ featrues a plethora
+m/hot_tub_time_machine,features the theme,[ a ] tediously familiar collection of pointlessly crude moments
+m/demolition_man,features the theme,... a sporadically amusing yet pervasively underwhelming bit of early ' 90s cheese
+m/hot_tub_time_machine,features the theme,... a guilty pleasure in spite
+m/terminator,features the theme,every movie addict
+m/hot_tub_time_machine,features the theme,excrement gags of course
+m/spaceballs,features the theme,exquisite timing
+m/hot_tub_time_machine,features the theme,"evoking nostalgia in baby-boomers grossed politically-incorrect , r-rated guffaws"
+m/hot_tub_time_machine,features the theme,everything they find
+m/hot_tub_time_machine,features the theme,exactly the movie trailers title promise
+m/hot_tub_time_machine,features the theme,exactly the sort of film the title suggest
+m/hot_tub_time_machine,features the theme,enough genuinely funny moments
+m/demolition_man,features the theme,enjoyable pop-culture junk actioner
+m/hot_tub_time_machine,features the theme,football game outcomes
+m/spaceballs,features the theme,foot in blazing sun
+m/demolition_man,features the theme,flames bullets special effects
+m/spaceballs,features the theme,flees planet dot matrix
+m/demolition_man,features the theme,futuristic satire
+m/hot_tub_time_machine,features the theme,gay panic jokes
+m/dumb_and_dumber,features the theme,facial gyrations jibes pedestrian slapstick
+m/hot_tub_time_machine,features the theme,fairly funny film
+m/hot_tub_time_machine,features the theme,f words
+m/terminator,features the theme,few lulls within the narrative
+m/terminator,features the theme,fewer special-effects
+m/hot_tub_time_machine,features the theme,films about the depressed cusackian hero
+m/hot_tub_time_machine,features the theme,feels like a movie like the kind
+m/dumb_and_dumber,features the theme,crude and rude humor
+m/demolition_man,features the theme,cryo-sleep
+m/hot_tub_time_machine,features the theme,"crummy-looking , exploitative , childishly gross and pointedly homophobic teen-sex comedy"
+m/terminator,features the theme,control of the truck
+m/hot_tub_time_machine,features the theme,chernobly
+m/hot_tub_time_machine,features the theme,chev
+m/demolition_man,features the theme,cocteau
+m/demolition_man,features the theme,comedy replete
+m/demolition_man,features the theme,combat training programs
+m/hot_tub_time_machine,features the theme,clever structure
+m/demolition_man,features the theme,down staircases
+m/hot_tub_time_machine,features the theme,drunken shenanigans
+m/hot_tub_time_machine,features the theme,dudesville
+m/hot_tub_time_machine,features the theme,dude-centered shenanigans
+m/hot_tub_time_machine,features the theme,dude humor
+m/hot_tub_time_machine,features the theme,disorderly drinking
+m/hot_tub_time_machine,features the theme,either an homage to that era's high-concept absurdism
+m/demolition_man,features the theme,elements of sci-fi
+m/hot_tub_time_machine,features the theme,"easy , nostalgic humor about oversized cell phones"
+m/hot_tub_time_machine,features the theme,dated pop-culture humor
+m/dumb_and_dumber,features the theme,debt collectors
+m/hot_tub_time_machine,features the theme,cusack seem(s like a casting error
+m/hot_tub_time_machine,features the theme,cusack who mocks his iconic presence
+m/spaceballs,features the theme,diminutive sparkly brown-clad aliens
+m/demolition_man,features the theme,demolition man
+m/spaceballs,features the theme,his royal lineage
+m/terminator,features the theme,his own time career
+m/hot_tub_time_machine,features the theme,his trench-coated cool-misfit persona
+m/demolition_man,features the theme,his unapologetic popcorn-pleasing action
+m/hot_tub_time_machine,features the theme,his iconic presence in ' 80s films
+m/terminator,features the theme,his iconic physique
+m/hot_tub_time_machine,features the theme,his knowledge of football game outcomes
+m/hot_tub_time_machine,features the theme,his or her formative years in the reagan era
+m/terminator,features the theme,his menacing silhouette
+m/spaceballs,features the theme,his madcap
+m/dumb_and_dumber,features the theme,"inspired , irreverent , spark-driven comedy takes you places you thought even a jim carrey movie"
+m/terminator,features the theme,"indiscriminate , un-pc killings"
+m/hot_tub_time_machine,features the theme,its characters ' path to redemption
+m/hot_tub_time_machine,features the theme,its butterfly effect meddlings
+m/hot_tub_time_machine,features the theme,its broadly drawn characters humor tired gags
+m/hot_tub_time_machine,features the theme,inventive plotting
+m/dumb_and_dumber,features the theme,ious
+m/terminator,features the theme,its army of machines
+m/spaceballs,features the theme,it`s a close call spaceballs have some big laughs
+m/hot_tub_time_machine,features the theme,hot tub's humour revels in political incorrectness
+m/hot_tub_time_machine,features the theme,hot tub machine
+m/hot_tub_time_machine,features the theme,hot tub
+m/hot_tub_time_machine,features the theme,horndog humor
+m/hot_tub_time_machine,features the theme,horrible jerk
+m/terminator,features the theme,horror action sci-fi
+m/hot_tub_time_machine,features the theme,honks
+m/hot_tub_time_machine,features the theme,homosexual hijinks executed slapstick punches
+m/hot_tub_time_machine,features the theme,home-appliance time-travel comedies
+m/hot_tub_time_machine,features the theme,ideje iskoristiti
+m/dumb_and_dumber,features the theme,heart excels with the complementary screen teaming
+m/spaceballs,features the theme,helmet orders
+m/demolition_man,features the theme,help from the scraps
+m/hot_tub_time_machine,features the theme,heavy drinking in their hotel room's hot tub
+m/hot_tub_time_machine,features the theme,guy-oriented wish fulfillment
+m/hot_tub_time_machine,features the theme,hard-r comedy
+m/terminator,features the theme,hard sci-fi action
+m/spaceballs,features the theme,her droid of honor
+m/dumb_and_dumber,features the theme,her aspen-bound plane
+m/hot_tub_time_machine,features the theme,good self-awareness
+m/spaceballs,features the theme,goofy parody
+m/hot_tub_time_machine,features the theme,good-times stupidness
+m/hot_tub_time_machine,features the theme,good geek
+m/hot_tub_time_machine,features the theme,good farces
+m/hot_tub_time_machine,features the theme,genuine wit on display
+m/hot_tub_time_machine,features the theme,genuine retro fun
+m/hot_tub_time_machine,features the theme,genuine moments of raucous hilarity
+m/spaceballs,features the theme,"gentle , harmless satire has real bite"
+m/dumb_and_dumber,features the theme,grammatical errors
+m/hot_tub_time_machine,features the theme,his carbon monoxide poisoning
+m/terminator,features the theme,his choppy hair
+m/demolition_man,features the theme,his acclimation to the future
+m/hot_tub_time_machine,features the theme,his biggest screen role
+m/terminator,features the theme,his attempt locate sarah
+m/hot_tub_time_machine,features the theme,his attraction to jenny
+m/terminator,features the theme,"his extraordinary , legend in his own time career"
+m/terminator,features the theme,his final pipe bomb
+m/hot_tub_time_machine,features the theme,his destined-to-be-amputated arm
+m/dumb_and_dumber,features the theme,his dog-grooming job
+m/spaceballs,features the theme,her pre-arranged wedding
+m/dumb_and_dumber,features the theme,her kidnapped husband
+m/hot_tub_time_machine,features the theme,"high-energy and high-concept , hot tub benefits"
+m/hot_tub_time_machine,features the theme,high-concept comedy
+m/hot_tub_time_machine,features the theme,high brow stuff
+m/demolition_man,features the theme,him-cocteau
+m/hot_tub_time_machine,features the theme,hilarity characterization clever structure
+m/dumb_and_dumber,features the theme,him shay harry
+m/terminator,features the theme,her unborn son
+m/spaceballs,features the theme,absurdist'star wars ' parody brooks
+m/hot_tub_time_machine,features the theme,access to an actual hot tub time machine
+m/terminator,features the theme,action with ideas
+m/spaceballs,features the theme,about the same level
+m/hot_tub_time_machine,features the theme,about a time machine
+m/dumb_and_dumber,features the theme,alive thanks to a bulletproof vest
+m/hot_tub_time_machine,features the theme,adolescent idiocy
+m/hot_tub_time_machine,features the theme,admission worthwhile
+m/spaceballs,features the theme,adequate kitsch
+m/terminator,features the theme,a whizz
+m/hot_tub_time_machine,features the theme,"a wild , hit-and-miss stab at high-concept comedy"
+m/terminator,features the theme,a way stories manage
+m/terminator,features the theme,a work of pulp art
+m/dumb_and_dumber,features the theme,a woman he driving
+m/dumb_and_dumber,features the theme,a woman harry met
+m/hot_tub_time_machine,features the theme,"a winning , almost totally successful comedy"
+m/hot_tub_time_machine,features the theme,an admitted old fogy
+m/hot_tub_time_machine,features the theme,an actual hot tub
+m/hot_tub_time_machine,features the theme,an actual hot tub time machine
+m/dumb_and_dumber,features the theme,"an abominable , abdominal comedy"
+m/hot_tub_time_machine,features the theme,an absurdest buddy comedy throwback with a paper-thin premise
+m/hot_tub_time_machine,features the theme,an amusing comedy exceeds the genre's low expectations
+m/hot_tub_time_machine,features the theme,an amusing movie
+m/hot_tub_time_machine,features the theme,an amiable time-waster
+m/demolition_man,features the theme,an appropriate criminal rehabilitation program
+m/spaceballs,features the theme,all the major space adventures of the last decade
+m/demolition_man,features the theme,all means at their disposal
+m/demolition_man,features the theme,almost every supposition a film be
+m/hot_tub_time_machine,features the theme,all-out comedy
+m/hot_tub_time_machine,features the theme,amiable nonsense
+m/spaceballs,features the theme,all their air
+m/terminator,features the theme,a surprisingly vicious little film
+m/terminator,features the theme,a surprisingly meditative work
+m/hot_tub_time_machine,features the theme,"a surprisingly satisfying , if not exactly lmao"
+m/hot_tub_time_machine,features the theme,a surprisingly enjoyable way waste 90 minutes
+m/hot_tub_time_machine,features the theme,a sweet-natured message about friendship
+m/terminator,features the theme,"a tense , slickly executed thriller sent a relatively unknown austrian bodybuilder"
+m/hot_tub_time_machine,features the theme,a testament to the wit
+m/demolition_man,features the theme,a thermal scan of the building he leads an unauthorized assault
+m/hot_tub_time_machine,features the theme,a squirrel from the resort
+m/hot_tub_time_machine,features the theme,"a startlingly alert , good-natured , borderline poignant slapstick comedy"
+m/hot_tub_time_machine,features the theme,a studio's hopes
+m/hot_tub_time_machine,features the theme,a successful music producer
+m/spaceballs,features the theme,a strange incident involving an alien
+m/terminator,features the theme,a stroke of fortune
+m/spaceballs,features the theme,a very unfortunate script a rampant direction a soulless montage
+m/hot_tub_time_machine,features the theme,a urine-filled squirt gun
+m/demolition_man,features the theme,a utopia run under the pseudo-pacifist guidance
+m/spaceballs,features the theme,a vacuum cleaner
+m/hot_tub_time_machine,features the theme,a time-warp trip
+m/hot_tub_time_machine,features the theme,a time-travel movie of all time
+m/hot_tub_time_machine,features the theme,a total immersion in dude-centered shenanigans
+m/hot_tub_time_machine,features the theme,a throwaway offering
+m/dumb_and_dumber,features the theme,arrests him shay
+m/hot_tub_time_machine,features the theme,anyone who spent any number
+m/terminator,features the theme,attempts run sarah
+m/hot_tub_time_machine,features the theme,baby boomer references
+m/terminator,features the theme,b-grade action cinema
+m/hot_tub_time_machine,features the theme,at least some nagging lack of narrative underpinning undercuts momentum
+m/terminator,features the theme,another encounter with the terminator
+m/hot_tub_time_machine,features the theme,any movie called hot tub time machine
+m/hot_tub_time_machine,features the theme,any old gag
+m/hot_tub_time_machine,features the theme,any number of his or her formative years
+m/dumb_and_dumber,features the theme,anti-social behaviour
+m/spaceballs,features the theme,any escape pods
+m/terminator,features the theme,"both the big ideas at work as a proactive , inventive filmmaker"
+m/hot_tub_time_machine,features the theme,best title since snakes
+m/hot_tub_time_machine,features the theme,balances middle-age angst with adolescent idiocy
+m/dumb_and_dumber,features the theme,bodily function jokes gyrations sexual jibes
+m/spaceballs,features the theme,borsch-belt postmodern
+m/spaceballs,features the theme,blazing sun
+m/terminator,features the theme,an even more ambitious sequel
+m/hot_tub_time_machine,features the theme,"an especially wonderful , demented monologue he explains"
+m/hot_tub_time_machine,features the theme,an example of the phenomenon
+m/dumb_and_dumber,features the theme,an excuse for an endless series
+m/dumb_and_dumber,features the theme,an execrable catalogue of doody jokes
+m/terminator,features the theme,an external layer of living tissue
+m/terminator,features the theme,an explosion burns the flesh
+m/terminator,features the theme,an artificial intelligence defense network
+m/demolition_man,features the theme,an attack by phoenix's men
+m/dumb_and_dumber,features the theme,an endless series of gags
+m/terminator,features the theme,"an efficient , cold-blooded sci-fi splatter movie makes the mistake"
+m/hot_tub_time_machine,features the theme,an effective nostalgic trip
+m/terminator,features the theme,an efficient killing machine with a powerful metal endoskeleton
+m/hot_tub_time_machine,features the theme,an educated guess
+m/hot_tub_time_machine,features the theme,an over-reliance on lowbrow humour
+m/demolition_man,features the theme,an unauthorized assault capture phoenix
+m/hot_tub_time_machine,features the theme,"an ultra-raunchy , raucous gross-out comedy"
+m/dumb_and_dumber,features the theme,an opening credit sequence rife with intentional misspellings
+m/hot_tub_time_machine,features the theme,an open mic event
+m/dumb_and_dumber,features the theme,an old friend of the swansons
+m/hot_tub_time_machine,features the theme,an unwieldy welding
+m/hot_tub_time_machine,features the theme,an uproarious homage to 1980s movies
+m/dumb_and_dumber,features the theme,an uneven collection of bodily function jokes
+m/dumb_and_dumber,features the theme,an infusion of heart excels
+m/demolition_man,features the theme,an inspired mix of high-octane action
+m/spaceballs,features the theme,an impossibly huge ship
+m/spaceballs,features the theme,an obvious affection for the sci-fi stuff
