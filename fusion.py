@@ -434,7 +434,7 @@ class TransEFuser:
         )
         return loader
 
-    def fuse(self):
+    def fuse(self, history=None):
         """
         Method that fits and predicts the distances and probabilities for
         the triples in input_kg_df using a k = n_splits cross-validation
@@ -459,7 +459,7 @@ class TransEFuser:
             ].reset_index(drop=True)
 
             kfold = KFold(self.n_splits)
-
+            j = 0
             for train_idx, test_idx in kfold.split(df):
                 loss = np.inf
                 stagnant_iterations = 0
@@ -470,10 +470,16 @@ class TransEFuser:
                 # Instantiate the test DataLoader
                 test_loader = self.gen_data_loader(df.iloc[test_idx])
 
+                if history is not None:
+                    history[j] = {}
+                    history[j]["training_loss"] = []
+                    history[j]["test_loss"] = []
+
                 for _ in range(self.max_epochs):
                     if stagnant_iterations >= self.patience:
                         continue
                     trans.fit(training_loader)
+                    train_loss = trans.evaluate(training_loader)
                     new_loss = trans.evaluate(test_loader)
                     if new_loss >= loss:
                         stagnant_iterations += 1
@@ -481,11 +487,14 @@ class TransEFuser:
                         stagnant_iterations = 0
                     loss = new_loss
                     print(f"relation {relation}, epoch {_}, loss {new_loss}")
-
+                    if history is not None:
+                        history[j]["training_loss"].append(train_loss)
+                        history[j]["test_loss"].append(loss)
+                j += 1
                 idx_array = trans.gen_training_array(df.iloc[test_idx])
-                full_array = trans.gen_full_array(idx_array)
-                new_df = trans.array2kg_df(full_array)
-                new_df["distance"] = trans.get_global_distance(full_array)
+                # full_array = trans.gen_full_array(idx_array)
+                new_df = trans.array2kg_df(idx_array)
+                new_df["distance"] = trans.get_global_distance(idx_array)
                 kg_df = pd.concat([kg_df, new_df]).reset_index(drop=True)
             kg_df["probability"] = trans.gen_probability(kg_df)
         return kg_df
